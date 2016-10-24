@@ -60,6 +60,52 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a {
 
 h5, h6 { color: $primary-color; }
 
+
+#intro-box {
+  background-color: $primary-color;
+  background-image: url(../images/dronninglouise.jpg);
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#intro-box .left-box {
+  margin-top: 20px;
+  background-color: $primary-color;
+  opacity: 0.7;
+}
+
+#intro-box .left-box h2 {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1.5em;
+  color: white;
+}
+
+
+#intro-box .right-box {
+  margin-top: 245px;
+  background: $primary-color;
+  opacity: 0.7;
+}
+
+#intro-box .right-box {
+   color: white;
+   border-color: white;
+   font-size: 0.9em;
+
+}
+
+#intro-box .right-box a {
+  color: white;
+  border-color: white;
+  text-decoration: underline;
+}
+
+
+/*
 #introduction {
  background-color: $primary-color;
  background-image: url(../images/dronninglouise.jpg);
@@ -129,6 +175,8 @@ h5, h6 { color: $primary-color; }
  width: 550px;
  line-height: 1.5em;
 }
+
+*/
 
 body {
     display: flex;
