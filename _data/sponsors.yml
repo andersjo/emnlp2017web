@@ -1,0 +1,19 @@
+- category: Platinum Sponsors
+  members:
+  - name: Google
+    shortname: google
+  - name: Baidu
+    shortname: baidu
+  - name: Amazon
+    shortname: amazon
+
+- category: Gold Sponsors
+  members:
+  - name: Bloomberg
+    shortname: bloomberg
+  - name: Citadel
+    shortname: citadel
+  - name: Ebay
+    shortname: ebay
+  - name: Facebook
+    shortname: facebook

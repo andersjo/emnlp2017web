@@ -1,0 +1,50 @@
+h1, h2, h3, h4, h1 a, h2 a, h3 a, h4 a { color: #0c509e; }
+
+#introduction h2, #attention {
+ background: #0C509E;
+ background: rgba(15,81,160,0.8);
+ color: #f7fff7;
+}
+
+#introduction a, #attention a {
+ color: white;
+ border-color: white;
+}
+
+h1 A:hover, h2 A:hover, h3 A:hover, h4 A:hover { color: #0C509e; }
+
+.fees { background: #dcECFF; }
+.fees th, .fees thead {
+  color: #0c509e;
+}
+
+body
+/* { background: #e6f3d3; } */
+/* { background: #dCEBcc; } */
+/* { background: #EBEBcc; } */
+/* { background: #22354a; } */
+/* { background: #d0cbc1; } */
+/* { background: #4482B5; } */
+/* { background: #a8c8dd; } */
+/* { background: #1476D4; } */
+{ background: #1A2739; }
+
+.header, #content { background: white; }
+
+DIV#main,
+DIV#past-emnlp,
+DIV#contacts
+{ background: #f7f7ff; }
+
+DIV#cmain,
+DIV#committees ,
+{ background: white; }
+
+#introduction {
+ background-color: #1456A4;
+ background-image: url(alfama-alternative.jpg);
+ height: 380px;
+}
+#content P BIG A {
+ color: darkred;
+}

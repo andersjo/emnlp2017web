@@ -1,0 +1,104 @@
+- title: General Chair
+  members:
+  - affilition: University of Colorado
+    e_mail: Martha.Palmer@colorado.edu
+    name: Martha Palmer
+
+- title: Program Co-Chair
+  members:
+  - name: Sebastian Riedel
+    affilition: University College London
+    e_mail: sebastian.riedel@gmail.com
+  - name:  Rebecca Hwa
+    affilition: University of Pittsburgh
+    e_mail: rebecca.hwa@gmail.com
+
+- title: Local Arrangements Co-Chair
+  members:
+  - name: Dirk Hovy
+    affilition: University of Copenhagen
+    e_mail: diho@di.ku.dk
+  - name: Anders Søgaard
+    affilition: University of Copenhagen
+    e_mail: soegaard@hum.ku.dk
+
+- title: Local Sponsorship Chair
+  members:
+  - affilition: Copenhagen Business School
+    e_mail: dh.itm@cbs.dk
+    name: Daniel Hardt
+
+- title: Tutorial Co-Chair
+  members:
+  - affilition: Georgetown University
+    e_mail: nschneid@inf.ed.ac.uk
+    name: Nathan Schneider
+  - affilition: Edinburgh University
+    e_mail: a.birch@ed.ac.uk
+    name: Alex Birch
+
+- title: Publications Sr Chair
+  members:
+  - affilition: TJ Watson Lab, IBM
+    e_mail: sidd@patwardhans.net
+    name: Siddharth Patwardhan
+
+- title: Publications Jr Chair
+  members:
+  - affilition: TJ Watson Lab, IBM
+    e_mail: preethi.raghavan@gmail.com
+    name: Preethi Raghavan
+
+- title: Demos Co-Chair
+  members:
+  - affilition: University of Colorado
+    e_mail: mpaul39@gmail.com
+    name: Michael Paul
+  - affilition: Sheffield University
+    e_mail: l.specia@sheffield.ac.uk
+    name: Lucia Specia
+
+- title: Publicity Chair
+  members:
+  - affilition: Microsoft Research
+    e_mail: margarmitchell@gmail.com
+    name: Meg Mitchell
+
+- title: Web Chair
+  members:
+  - affilition: Apple
+    e_mail: anders@johannsen.com
+    name: Anders Johannsen
+
+- title: Conference Handbook Chair
+  members:
+  - affilition: University of Copenhagen
+    e_mail: joa.bingel@gmail.com
+    name: Joachim Bingel
+
+- title: Conference Handbook Advisor
+  members:
+  - affilition: Johns Hopkins University
+    e_mail: post@cs.jhu.edu
+    name: Matt Post
+
+- title: Handbook Proofreaders
+  members:
+  - affilition: University College London
+    e_mail: pontus@stenetorp.se
+    name: Pontus Stenetorp
+
+- title: Student Scholarship Co-Chair and Student Volunteer Coordinator
+  members:
+  - affilition: University of Copenhagen
+    e_mail: zeljko.agic@gmail.com
+    name: Zeljko Agic
+  - affilition: University of Southern California, ISI
+    e_mail: ybisk@isi.edu
+    name: Yonatan Bisk
+
+- title: SIGDAT Liason
+  members:
+  - affilition: University of Pennsylvania
+    e_mail: ccb@cis.upenn.edu
+    name: Chris Callison-Birch

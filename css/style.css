@@ -1,0 +1,682 @@
+@import url('colours.css');
+
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+
+/* ------------------------------ */
+
+* { margin: 0; padding: 0; border: 0; }
+
+body {
+ font-family: Verdana, sans-serif;
+ font-size: 81.25%;
+ line-height: 1.4em;
+ text-align: left;
+}
+
+html>body {
+ font-size: 12.5px;
+ overflow-y: scroll;
+}
+
+.header {
+ font-size: 0.8em;
+ text-align: center;
+ padding: 0.3em 0px;
+}
+
+.header, #content {
+ margin: 0 auto;
+ width: 880px;
+ border-width: 0 2px 0 2px;
+ border-style: solid;
+ border-color: #b5b5b5;
+}
+
+#content {
+ border-width: 0 2px 2px 2px;
+}
+
+/* --- general definitions ------- */
+
+A { color: #404040; text-decoration: none; border-bottom: 1px dotted #404040; }
+A:hover { color: #101010; border-bottom: 1px solid #101010; }
+P { margin: 0.7em 0; }
+H2 { font-size: 1.8em; margin-top: 0.7em; margin-bottom: 0.7em;}
+
+/* --- introduction and banner --- */
+
+#introduction {
+ border: solid white;
+ border-width: 1px 0 1px 0;
+ background-repeat: no-repeat;
+ background-position: center center;
+ position: relative;
+}
+
+#intro-left {
+ position: relative;
+ right: 50%;
+}
+
+#intro-right {
+ position: relative;
+ left: 50%;
+ width: 50%;
+}
+
+#intro-left H2 {
+ text-align: right;
+ position: relative;
+ left: 0;
+ font-size: 48px;
+ font-weight: normal;
+ line-height: 1.5em;
+ padding-right: 1em;
+ margin-right: 120px;
+}
+
+#intro-left H2 A {
+ border: 0;
+}
+
+#intro-left h2 sub {
+ font-size: 0.55em;
+}
+
+#attention {
+ position: relative;
+ padding: 1px 0 3px 1em;
+ margin-left: 40px;
+ right: 0;
+}
+
+#attention P {
+ width: 380px;
+ line-height: 1.5em;
+}
+
+/* --- main content -------------- */
+
+DIV#main { overflow: hidden; }
+
+DIV#cmain { overflow: hidden; }
+
+#page #content {
+ padding: 0.5em 0 2.5em 0;
+}
+
+#page #content H1,
+#page #content H2,
+#page #content H3,
+#page #content H4,
+#page #content H5 {
+  margin: 2em 90px 1em 90px;
+  line-height: 1.1em;
+}
+
+#page #content P {
+  margin-left: 90px;
+  margin-right: 90px;
+  line-height: 1.5em;
+}
+
+#page #content OL,
+#page #content UL {
+  margin-left: 170px;
+  margin-right: 90px;
+}
+
+#page #content OL UL {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+#content {
+ margin-top: -10px;
+ position: relative;
+}
+
+#home #content {
+ margin-top: 0;
+}
+
+#content DIV {
+ clear: both;
+ padding: 10px 35px 10px 35px;
+ border-bottom: 1px solid white;
+}
+
+#content DIV DIV {
+ clear: none;
+ padding: 0;
+ border: 0;
+}
+
+#content UL {
+ margin: 2.1em 160px;
+}
+
+#home #content UL {
+ margin: 0.7em 0 0.7em 80px;
+}
+
+#main DIV {
+ padding: 0px;
+}
+
+#main UL {
+ list-style-type: none;
+ margin: 0.9em 0;
+ margin-left: 79px;
+ font-size: 1.1em;
+ line-height: 1.1em;
+}
+
+#main LI {
+ margin: 0.9em 0;
+}
+
+#cmain DIV {
+ padding-top: 10em;
+ padding-bottom: 10em;
+}
+
+#cmain UL {
+ list-style-type: none;
+ margin: 0.9em 0;
+ margin-left: 55px;
+ font-size: 1.1em;
+ line-height: 1.1em;
+}
+
+#cmain LI {
+ margin: 0.9em 0;
+}
+
+#participants,
+#general,
+#conference,
+#authors {
+ float: left;
+ width: 394px;
+}
+
+#committees {
+ padding-top: 30em;
+ padding-bottom: 30em;
+}
+
+#committees H3 {
+ float: left;
+ width: 219px;
+ margin-right:80px;
+ margin-bottom:20px;
+ text-align: right;
+}
+
+#committees DIV {
+ clear: both;
+ margin-top: 2em;
+ padding: 1.4em 0;
+ overflow: hidden;
+}
+
+* #committees UL {
+ margin-left: 219px;
+ list-style-type: none;
+}
+
+#committees LI {
+ width: 200px;
+ margin-left: 20px;
+ margin-bottom: 0.7em;
+ margin-top: -0.75em;
+ float: left;
+}
+
+#past-conll UL,
+#past-emnlp UL {
+ margin-left: 50px;
+/* list-style-type: none; */
+}
+
+#past-conll LI,
+#past-emnlp LI {
+ width: 219px;
+ margin-right: 20px;
+ margin-bottom: 0.7em;
+ float: left;
+}
+
+
+#committees LI SPAN {
+ display: block;
+ font-variant: small-caps;
+ font-size: 0.8em;
+ margin-bottom: 10px;
+}
+
+#past-emnlp LI SPAN, #past-conll LI SPAN {
+ display: block;
+ font-variant: small-caps;
+ font-size: 0.8em;
+}
+
+#committees LI A, #past-emnlp LI A, #past-conll LI A {
+ font-size: 1.2em;
+}
+
+#sponsors UL { margin-left: 80px !important; list-style-type: none; }
+#sponsors LI {
+ float: left;
+ width: 220px;
+ margin: 10px 20px 0 0px;
+}
+
+#sponsors IMG {
+ display: block;
+ width: 200px;
+}
+
+
+#content #calendar UL {
+ list-style-type: none;
+ margin: 1em 0;
+ margin-left: 9px;
+ font-size: 1.2em;
+ line-height: 1em;
+}
+
+#calendar LI {
+ margin: 1.4em 0;
+}
+
+#calendar LI.passed, #calendar LI.passed H3 {
+ color: #8080b0;
+}
+
+#calendar LI h3 {
+ clear: both;
+ float: left;
+ text-align: right;
+ width: 299px;
+ margin-right: 20px;
+ font-size: 0.95em;
+}
+
+#footer {
+ clear: both;
+ text-align: center;
+ height: 40px;
+ font-size: 0.85em;
+ padding: 2em 0;
+}
+
+#footer DIV {
+ width: 860px;
+ margin: auto;
+ text-align: right;
+ line-height: 3em;
+}
+
+#footer P A {
+}
+
+#secondary {
+ font-size: 0.85em;
+ padding: 2em 0;
+ clear: both;
+ background: #f0f0f0;
+ border-top: 2px solid #b5b5b5;
+}
+
+#secondary DIV {
+ width: 860px;
+ margin: 0 auto;
+}
+
+#page #content UL.titles {
+ margin: 2em 100px;
+ list-style-type: none;
+}
+
+UL.titles LI {
+ margin: 2em 0;
+}
+
+.titles LI SPAN {
+ display: block;
+ font-weight: normal;
+ font-variant: small-caps;
+ border-top: 1px solid #b5b5b5;
+}
+
+#content DIV#news {
+ margin: 1em 59px;
+ padding: 10px 20px;
+ color: saddlebrown;
+ background: #fec;
+ border: 2px solid orange;
+ font-size: 85%;
+ -moz-border-radius: 16px;
+ border-radius: 16px;
+}
+
+#content DIV#news H2 {
+ color: inherit;
+}
+
+#content DIV#news P {
+ margin: 1em 0;
+}
+
+.invited H2 SPAN {
+  display: block;
+  font-weight: normal;
+  font-variant: small-caps;
+  border-top: 1px solid #b5b5b5;
+}
+
+.new {
+ margin-left: -55px !important;
+ padding-left: 55px;
+ background: url(new.png) top left no-repeat;
+ background-size: 45px 13px;
+ padding-bottom: 1px
+}
+
+.update { 
+ margin-left: -55px !important;
+ padding-left: 55px;
+ background: url(update.png) top left no-repeat;
+ background-size: 45px 13px;
+ padding-bottom: 1px
+}
+
+SPAN.new {
+ padding-left: 24px;
+ margin: 0 !important;
+ background: url(new.gif) top left no-repeat;
+ border-bottom: 2px solid red;
+ font-weight: bold;
+
+}
+
+#hotels IMG {
+ clear: right;
+ float: right;
+ margin: -5px 90px 40px 20px;
+ padding: 4px;
+ border: 1px solid #ddd;
+}
+
+#content #hotels H3 {
+ margin-top: 4em;
+}
+
+#content #hotels UL {
+ margin: 0px 2px 0 90px;
+}
+
+#page #content OL#hotels {
+ margin-left: 90px;
+ margin-right: 0px;
+}
+
+OL#hotels LI { clear: right; }
+OL#hotels LI LI { clear: none; }
+
+#page #content OL#hotels H3,
+#page #content OL#hotels P,
+#page #content OL#hotels UL {
+ margin-left: 0;
+}
+
+DIV#short-papers, DIV#long-papers,
+DIV#talks, DIV#posters {
+ padding: 0;
+ margin: 0;
+}
+
+#short-papers UL, #long-papers UL,
+#talks UL, #posters UL {
+ list-style-type: none;
+}
+
+#short-papers LI, #long-papers LI,
+#talks LI, #posters LI {
+ margin: 1.5em 0 1.5em -80px;
+ font-size: 1.1em;
+}
+
+#short-papers SPAN, #long-papers SPAN,
+#talks SPAN, #posters SPAN {
+ color: #111;
+ display: block;
+ font-variant: small-caps;
+ font-size: 0.9em;
+ padding-top: 0.1em;
+ margin-top: 0.1em;
+ border-top: 1px solid #cccceb;
+}
+
+.fees {
+  margin: 0 0 2em 80px;
+  padding: 5px 10px;
+  border-spacing: 0;
+}
+
+.fees span {
+  color: #555;
+  font-size: 80%;
+  display: block;
+}
+
+.fees td, .fees th {
+  padding-top: 10px;
+  width: 160px;
+  vertical-align: top;
+}
+
+.fees th {
+  width: 240px;
+}
+
+.fees th, .fees thead {
+  font-weight: normal;
+  font-size: 110%;
+}
+
+.fees thead th {
+  font-weight: bold;
+}
+
+.action {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* START -------- program info -------- */
+
+.program UL LI SPAN {
+ display: block;
+ font-size: 0.91em;
+ border-top: 1px solid #cccceb;
+ font-variant: small-caps;
+}
+
+/* .program A {
+ border: none;
+ background: url(go-normal.png) right 3px no-repeat;
+ padding-right: 14px;
+}
+
+.program A:hover {
+ color: #406040;
+ background-image: url(go-hover.png);
+} */
+
+.program UL LI SPAN {
+ margin-left: 100px;
+ margin-bottom: 1em;
+}
+
+#content .program UL {
+ list-style-type: none;
+ margin: 1em 90px !important;
+}
+
+#content .program UL LI {
+ margin: 0.3em 0;
+ clear: left;
+}
+
+.program CODE {
+ width: 100px;
+ float: left;
+ font-size: 90%;
+ text-align: left;
+ margin-bottom: 0.5em;
+}
+
+.program H3 {
+ margin: 3em 40px 1em 40px;
+/* padding: 0 40px; */
+ border-bottom: 2px solid #cccceb;
+}
+
+.program H3 A {
+ border-bottom: none;
+}
+
+.program H4 {
+ margin-left: 100px;
+ margin-top: 3em;
+}
+
+.program .break {
+ color: #777;
+}
+
+/* END -------- program info -------- */
+ 
+@media screen and (max-width: 900px) {
+
+ body {
+  width: auto;
+  margin: 0 auto; 
+ }
+
+ .header, #content, #secondary DIV, #footer DIV {
+   width: auto;
+   margin: auto;
+ }
+ 
+ #content {
+  margin-top: -200px;
+ }
+
+ #intro-left, #intro-right {
+   position: static;
+   left: auto;
+   right: auto;
+   width: auto;
+ }
+ 
+ #intro-left H2 {
+   float: left;
+   padding-left: 10px;
+   margin-right: 0;
+ }
+ 
+ #intro-right {
+   clear: left;
+ }
+
+ #content UL {
+   margin: 0;
+ }
+
+ #page #content H1, 
+ #page #content H2, 
+ #page #content H3, 
+ #page #content H4, 
+ #page #content H5 {
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+
+ #page #content P,
+ #content #hotels UL, 
+ #content #hotels IMG,
+ #content DIV UL,
+ #content DIV P {
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+ #page #content UL {
+   margin-left: 90px;
+ }
+ 
+ #committees DIV UL LI
+ {
+    float: none;
+    margin-left: 219px;
+    margin-bottom: 1.4em;
+ }
+ 
+}
+
+
+@media screen and (min-width: 900px) {
+
+  P.header, DIV#content {
+    border: 0 !important;
+    -o-box-shadow: #777 0px 0px 4px;
+    -moz-box-shadow: #777 0px 0px 4px;
+    -webkit-box-shadow: #777 0px 0px 4px;
+    box-shadow: #777 0px 0px 4px;
+  }
+
+}
+
+@media print {
+
+  #page .header, #page #introduction, #page #footer { display: none; }
+  #page #content { margin-top: 0; }
+  body#page { font-size: 13px; }
+
+}
+
+
+tr:nth-child(even) 
+{
+	background-color: #fdf3f0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid gray;
+	empty-cells: hide;
+	padding: 8px;
+}
+
+#fees {
+	text-align: center;
+}
