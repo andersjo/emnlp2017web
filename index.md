@@ -11,7 +11,7 @@ layout: default
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>EMNLP 2017 announced</big></span>
       <p>Next year's EMNLP will take place in Copenhagen.
-      The main conference is September 9 - 11, preceded by two days of workshops and tutorials
+      The main conference is September 9 - 11, preceded by two days of workshops and tutorials,
       September 7 - 8.
       <br>
       <span class="right-align">
