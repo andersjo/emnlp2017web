@@ -14,8 +14,12 @@ layout: default
         <div class="col s8">
             {% for member in group.members %}
               <div class="card-panel">
-                <b>{{ member.name }}</b> <br/>
-                <i>{{ member.affilition }}</i>
+              <div class="right">
+                <a href="{{ member.site }}"><i class="material-icons">person_pin</i></a>
+                <a href="mailto:{{ member.email }}"><i class="material-icons">email</i></a>
+              </div>
+              <b>{{ member.name }}</b> <br/>
+              <i>{{ member.affiliation }}</i>
               </div>
             {% endfor %}
         </div>

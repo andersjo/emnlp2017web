@@ -11,11 +11,11 @@ layout: default
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>EMNLP 2017 announced</big></span>
       <p>Next year's EMNLP will take place in Copenhagen.
-      The main conference is September 3 - 5, padded by workshops and tutorials
-      on September 2 and September 5.
+      The main conference is September 9 - 11, preceded by two days of workshops and tutorials
+      September 7 - 8.
       <br>
       <span class="right-align">
-         <i>Posted on October 24, 2016</i>
+         <i>Posted on November 22, 2016</i>
       </span>
       </p>
     </li>
@@ -60,11 +60,11 @@ layout: default
     <tbody>
       <tr>
         <td>Workshops and tutorials</td>
-        <td><time>September 2 and 6, 2017</time></td>
+        <td><time>September 7 and 8, 2017</time></td>
       </tr>
       <tr>
         <td>Main conference</td>
-        <td><time>September 3 - 5, 2017 </time></td>
+        <td><time>September 9 - 11, 2017 </time></td>
       </tr>
     </tbody>
     </table>

@@ -1,104 +1,124 @@
 - title: General Chair
   members:
-  - affilition: University of Colorado
-    e_mail: Martha.Palmer@colorado.edu
+  - affiliation: University of Colorado
+    email: Martha.Palmer@colorado.edu
     name: Martha Palmer
+    site: https://verbs.colorado.edu/~mpalmer/index.html
 
 - title: Program Co-Chair
   members:
   - name: Sebastian Riedel
-    affilition: University College London
-    e_mail: sebastian.riedel@gmail.com
+    affiliation: University College London
+    email: sebastian.riedel@gmail.com
+    site: http://www.riedelcastro.org/
   - name:  Rebecca Hwa
-    affilition: University of Pittsburgh
-    e_mail: rebecca.hwa@gmail.com
+    affiliation: University of Pittsburgh
+    email: rebecca.hwa@gmail.com
+    site: https://people.cs.pitt.edu/~hwa/
 
 - title: Local Arrangements Co-Chair
   members:
   - name: Dirk Hovy
-    affilition: University of Copenhagen
-    e_mail: diho@di.ku.dk
+    affiliation: University of Copenhagen
+    email: diho@di.ku.dk
+    site: http://www.dirkhovy.com
   - name: Anders Søgaard
-    affilition: University of Copenhagen
-    e_mail: soegaard@hum.ku.dk
+    affiliation: University of Copenhagen
+    email: soegaard@hum.ku.dk
+    site: http://cst.dk/anders
 
 - title: Local Sponsorship Chair
   members:
-  - affilition: Copenhagen Business School
-    e_mail: dh.itm@cbs.dk
+  - affiliation: Copenhagen Business School
+    email: dh.itm@cbs.dk
     name: Daniel Hardt
+    site: http://www.cbs.dk/en/staff/dhitm
 
 - title: Tutorial Co-Chair
   members:
-  - affilition: Georgetown University
-    e_mail: nschneid@inf.ed.ac.uk
+  - affiliation: Georgetown University
+    email: nschneid@inf.ed.ac.uk
     name: Nathan Schneider
-  - affilition: Edinburgh University
-    e_mail: a.birch@ed.ac.uk
-    name: Alex Birch
+    site: http://nathan.cl
+  - affiliation: Edinburgh University
+    email: a.birch@ed.ac.uk
+    name: Alexandra Birch
+    site: http://homepages.inf.ed.ac.uk/abmayne/
 
 - title: Publications Sr Chair
   members:
-  - affilition: TJ Watson Lab, IBM
-    e_mail: sidd@patwardhans.net
+  - affiliation: TJ Watson Lab, IBM
+    email: sidd@patwardhans.net
     name: Siddharth Patwardhan
+    site: http://www.patwardhans.net
 
 - title: Publications Jr Chair
   members:
-  - affilition: TJ Watson Lab, IBM
-    e_mail: preethi.raghavan@gmail.com
+  - affiliation: TJ Watson Lab, IBM
+    email: preethi.raghavan@gmail.com
     name: Preethi Raghavan
+    site: http://researcher.watson.ibm.com/researcher/view.php?person=us-praghav
 
 - title: Demos Co-Chair
   members:
-  - affilition: University of Colorado
-    e_mail: mpaul39@gmail.com
+  - affiliation: University of Colorado
+    email: mpaul39@gmail.com
     name: Michael Paul
-  - affilition: Sheffield University
-    e_mail: l.specia@sheffield.ac.uk
+    site: http://cmci.colorado.edu/~mpaul/
+  - affiliation: Sheffield University
+    email: l.specia@sheffield.ac.uk
     name: Lucia Specia
+    site: http://staffwww.dcs.shef.ac.uk/people/L.Specia
 
 - title: Publicity Chair
   members:
-  - affilition: Microsoft Research
-    e_mail: margarmitchell@gmail.com
-    name: Meg Mitchell
+  - affiliation: UCL
+    email: i.augenstein@ucl.ac.uk
+    name: Isabelle Augenstein
+    site: http://isabelleaugenstein.github.io/
 
 - title: Web Chair
   members:
-  - affilition: Apple
-    e_mail: anders@johannsen.com
+  - affiliation: Apple
+    email: anders@johannsen.com
     name: Anders Johannsen
+    site: http://johannsen.com
 
 - title: Conference Handbook Chair
   members:
-  - affilition: University of Copenhagen
-    e_mail: joa.bingel@gmail.com
+  - affiliation: University of Copenhagen
+    email: joa.bingel@gmail.com
     name: Joachim Bingel
+    site: http://www.diku.dk/english/staff/?pure=en/persons/526827
 
 - title: Conference Handbook Advisor
   members:
-  - affilition: Johns Hopkins University
-    e_mail: post@cs.jhu.edu
+  - affiliation: Johns Hopkins University
+    email: post@cs.jhu.edu
     name: Matt Post
+    site: http://cs.jhu.edu/~post/
 
 - title: Handbook Proofreaders
   members:
-  - affilition: University College London
-    e_mail: pontus@stenetorp.se
+  - affiliation: University College London
+    email: pontus@stenetorp.se
     name: Pontus Stenetorp
+    site: http://pontus.stenetorp.se
 
 - title: Student Scholarship Co-Chair and Student Volunteer Coordinator
   members:
-  - affilition: University of Copenhagen
-    e_mail: zeljko.agic@gmail.com
+  - affiliation: University of Copenhagen
+    email: zeljko.agic@gmail.com
     name: Zeljko Agic
-  - affilition: University of Southern California, ISI
-    e_mail: ybisk@isi.edu
+    site: http://zeljkoagic.github.io
+  - affiliation: University of Southern California, ISI
+    email: ybisk@isi.edu
     name: Yonatan Bisk
+    site: http://www.YonatanBisk.com
 
 - title: SIGDAT Liason
   members:
-  - affilition: University of Pennsylvania
-    e_mail: ccb@cis.upenn.edu
+  - affiliation: University of Pennsylvania
+    email: ccb@cis.upenn.edu
     name: Chris Callison-Birch
+    site: http://www.cis.upenn.edu/~ccb/
