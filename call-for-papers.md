@@ -142,4 +142,4 @@ layout: default
     <li>Publication: <a href="mailto:publication@emnlp2017.net">publication@emnlp2017.net</a></li>
     <li>General: <a href="mailto:contact@emnlp2017.net">contact@emnlp2017.net</a></li>
   </ul>
-</div>
+ </div>
