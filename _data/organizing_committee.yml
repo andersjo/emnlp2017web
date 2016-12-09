@@ -7,14 +7,14 @@
 
 - title: Program Co-Chair
   members:
-  - name: Sebastian Riedel
-    affiliation: University College London
-    email: sebastian.riedel@gmail.com
-    site: http://www.riedelcastro.org/
   - name:  Rebecca Hwa
     affiliation: University of Pittsburgh
     email: rebecca.hwa@gmail.com
     site: https://people.cs.pitt.edu/~hwa/
+  - name: Sebastian Riedel
+    affiliation: University College London
+    email: sebastian.riedel@gmail.com
+    site: http://www.riedelcastro.org/
 
 - title: Local Arrangements Co-Chair
   members:
@@ -36,25 +36,25 @@
 
 - title: Workshop Co-Chair
   members:
-  - affiliation: DeepMind
-    email: mail@karlmoritz.com
-    name: Karl Moritz Hermann
-    site: http://karlmoritz.com/
   - affiliation: Google
     email: vfossum@gmail.com
     name: Victoria Fossum
     site: https://sites.google.com/site/vfossum/home
+  - affiliation: DeepMind
+    email: mail@karlmoritz.com
+    name: Karl Moritz Hermann
+    site: http://karlmoritz.com/
 
 - title: Tutorial Co-Chair
   members:
-  - affiliation: Georgetown University
-    email: nschneid@inf.ed.ac.uk
-    name: Nathan Schneider
-    site: http://nathan.cl
   - affiliation: Edinburgh University
     email: a.birch@ed.ac.uk
     name: Alexandra Birch
     site: http://homepages.inf.ed.ac.uk/abmayne/
+  - affiliation: Georgetown University
+    email: nschneid@inf.ed.ac.uk
+    name: Nathan Schneider
+    site: http://nathan.cl
 
 - title: Demos Co-Chair
   members:

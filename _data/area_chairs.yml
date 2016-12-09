@@ -1,15 +1,17 @@
-- title: Information Extraction, Information Retrieval, and Question Answering
-  members:
-  - {affiliation: Singapore Management University, email: 'jingjiang@smu.edu.sg',
-    name: Jing Jiang}
+- members:
+  - {affiliation: University of Arizona, email: msurdeanu@email.arizona.edu, name: Mihai
+      Surdeanu (QA)}
+  - {affiliation: Singapore Management University, email: jingjiang@smu.edu.sg, name: Jing
+      Jiang}
   - {affiliation: LMU Munich, email: inquiries@cislmu.org, name: "Hinrich Sch\xFC\
       tze"}
-  - {affiliation: UC Irvine, email: sameer@uci.edu, name: 'Sameer Singh '}
-  - {affiliation: University of Arizona, email: 'msurdeanu@email.arizona.edu ', name: Mihai
-      Surdeanu (QA)}
-  - {affiliation: MSR, email: 'scottyih@microsoft.com ', name: Scott Wen-tau Yih}
+  - {affiliation: UC Irvine, email: sameer@uci.edu, name: Sameer Singh}
+  - {affiliation: MSR, email: scottyih@microsoft.com, name: Scott Wen-tau Yih}
+  title: Information Extraction, Information Retrieval, and Question Answering
+- members:
   - {affiliation: SUNY Albany, email: tomek@albany.edu, name: Tomek Strzalkowski}
-
+  title: Information Extraction, Information Retrieval, and Question Answering OR
+    Text Mining and NLP Applications
 - members:
   - {affiliation: University of Toronto, email: fidler@cs.toronto.edu, name: Sanja
       Fidler}
@@ -24,56 +26,56 @@
   - {affiliation: UNC Chapel Hill, email: mbansal@cs.unc.edu, name: Mohit Bansal}
   - {affiliation: University of Colorado, email: jbg@boydgraber.org, name: Jordan
       Boyd-Graber}
-  - {affiliation: University of Melbourne, email: 't.cohn@unimelb.edu.au ', name: Trevor
+  - {affiliation: University of Melbourne, email: t.cohn@unimelb.edu.au, name: Trevor
       Cohn}
   - {affiliation: University of Maryland, email: me@hal3.name, name: Hal Daume}
   - {affiliation: University of Victoria, email: afyshe@uvic.ca, name: Alona Fyshe}
-  - {affiliation: Simon Fraser University, email: 'anoop@sfu.ca ', name: Anoop Sarkar}
+  - {affiliation: Simon Fraser University, email: anoop@sfu.ca, name: Anoop Sarkar}
   title: Machine Learning
 - members:
-  - {affiliation: University of Maryland, email: 'marine@cs.umd.edu ', name: Marine
-      Carpuat}
+  - {affiliation: University of Maryland, email: marine@cs.umd.edu, name: Marine Carpuat}
   - {affiliation: University of Notre Dame, email: dchiang@nd.edu, name: David Chiang}
   - {affiliation: George Washington University, email: mtdiab@gwu.edu, name: Mona
       Diab}
   - {affiliation: University of Rochester, email: gildea@cs.rochester.edu, name: Dan
       Gildea}
-  - {affiliation: Johns Hopkins University, email: 'phkoehn@gmail.com ', name: Philipp
+  - {affiliation: Johns Hopkins University, email: phkoehn@gmail.com, name: Philipp
       Koehn}
   title: Machine Translation and Multilinguality
 - members:
   - {affiliation: Emory University, email: choi@mathcs.emory.edu, name: Jinho Choi}
   - {affiliation: University of Illinois at Urbana-Champaign, email: juliahmr@illinois.edu,
     name: Julia Hockenmaier}
-  - {affiliation: Harvard University, email: 'arush@g.harvard.edu ', name: Alexander
+  - {affiliation: Harvard University, email: arush@g.harvard.edu, name: Alexander
       Rush}
   - {affiliation: Singapore University of Technology and Design, email: yue_zhang@sutd.edu.sg,
-    name: 'Zhang Yue      '}
+    name: Zhang Yue}
   title: Segmentation, Tagging, and Parsing
 - members:
   - {affiliation: 'University of Roma, Tor Vergata', email: basili@info.uniroma2.it,
     name: Roberto Basili}
   - {affiliation: 'University of Hamburg, Germany', email: biemann@informatik.uni-hamburg.de,
     name: Chris Biemann}
-  - {affiliation: Deepmind, email: 'etg@google.com ', name: Ed Grefenstette}
+  - {affiliation: Deepmind, email: etg@google.com, name: Ed Grefenstette}
   - {affiliation: Google, email: tomkwiat@google.com, name: Tom Kwiatkowski}
   - {affiliation: 'cemantix.org and Boulder Learning, Inc', email: pradhan@cemantix.org,
     name: Sameer Pradhan}
-  - {affiliation: University of Utah, email: 'svivek@cs.utah.edu ', name: Vivek Srikumar}
+  - {affiliation: University of Utah, email: svivek@cs.utah.edu, name: Vivek Srikumar}
   title: Semantics
 - members:
   - {affiliation: University of Illinois at Chicago, email: liub@uic.edu, name: Bing
       Liu}
-  - {affiliation: University of Michigan, email: 'mihalcea@umich.edu ', name: Rada
-      Mihalcea}
+  - {affiliation: University of Michigan, email: mihalcea@umich.edu, name: Rada Mihalcea}
   - {affiliation: National Research Council Canada, email: uvgotsaif@gmail.com, name: Saif
       M. Mohammad}
   title: Sentiment Analysis and Opinion Mining
 - members:
   - {affiliation: 'University of California, Berkeley', email: dbamman@berkeley.edu,
     name: David Bamman}
-  - {affiliation: Cornell University, email: 'cristian@cs.cornell.edu ', name: Cristian
+  - {affiliation: Cornell University, email: cristian@cs.cornell.edu, name: Cristian
       Danescu-Niculescu-Mizil}
+  - {affiliation: Johns Hopkins University, email: mdredze@cs.jhu.edu, name: Mark
+      Dredze}
   - {affiliation: Georgia Tech, email: jacob.eisenstein@cc.gatech.edu, name: Jacob
       Eisenstein}
   title: Social Media and Computational Social Science
@@ -81,10 +83,10 @@
   - {affiliation: University of Washington, email: ostendor@uw.edu, name: Mari Ostendorf}
   title: Spoken Language Processing
 - members:
-  - {affiliation: Elemental Cognition, email: jennifer.chucarroll+profsvc@gmail.com,
-    name: Jennifer Chu-Carroll}
   - {affiliation: Michigan State University, email: jchai@cse.msu.edu, name: Joyce
       Chai}
+  - {affiliation: Elemental Cognition, email: jennifer.chucarroll+profsvc@gmail.com,
+    name: Jennifer Chu-Carroll}
   - {affiliation: Tohoku University, email: inui@ecei.tohoku.ac.jp, name: Kentaro
       Inui}
   - {affiliation: University of Washington, email: levow@uw.edu, name: Gina Levow}
@@ -92,9 +94,9 @@
   title: Summarization, Generation, Discourse, Dialogue
 - members:
   - {affiliation: Google, email: dipanjand@google.com, name: Dipanjan Das}
+  - {affiliation: Tokyo Metropolitan University, email: komachi@tmu.ac.jp, name: Mamoru
+      Komachi}
   - {affiliation: University of Cambridge, email: alk23@cl.cam.ac.uk, name: Anna Korhonen}
-  - {affiliation: Tokyo Metropolitan University, email: komachi@tmu.ac.jp, name: 'Mamoru
-      Komachi '}
   - {affiliation: Educational Testing Service (ETS), email: nmadnani@ets.org, name: Nitin
       Madnani}
   - {affiliation: KU Leuven, email: sien.moens@cs.kuleuven.be, name: Marie-Francine
