@@ -34,6 +34,17 @@
     name: Daniel Hardt
     site: http://www.cbs.dk/en/staff/dhitm
 
+- title: Workshop Co-Chair
+  members:
+  - affiliation: DeepMind
+    email: mail@karlmoritz.com
+    name: Karl Moritz Hermann
+    site: http://karlmoritz.com/
+  - affiliation: Google
+    email: vfossum@gmail.com
+    name: Victoria Fossum
+    site: https://sites.google.com/site/vfossum/home
+
 - title: Tutorial Co-Chair
   members:
   - affiliation: Georgetown University
@@ -44,20 +55,6 @@
     email: a.birch@ed.ac.uk
     name: Alexandra Birch
     site: http://homepages.inf.ed.ac.uk/abmayne/
-
-- title: Publications Sr Chair
-  members:
-  - affiliation: TJ Watson Lab, IBM
-    email: sidd@patwardhans.net
-    name: Siddharth Patwardhan
-    site: http://www.patwardhans.net
-
-- title: Publications Jr Chair
-  members:
-  - affiliation: TJ Watson Lab, IBM
-    email: preethi.raghavan@gmail.com
-    name: Preethi Raghavan
-    site: http://researcher.watson.ibm.com/researcher/view.php?person=us-praghav
 
 - title: Demos Co-Chair
   members:
@@ -70,9 +67,23 @@
     name: Lucia Specia
     site: http://staffwww.dcs.shef.ac.uk/people/L.Specia
 
+- title: Publications Sr Chair
+  members:
+  - affiliation: Apple
+    email: sidd@patwardhans.net
+    name: Siddharth Patwardhan
+    site: http://www.patwardhans.net
+
+- title: Publications Jr Chair
+  members:
+  - affiliation: TJ Watson Lab, IBM
+    email: preethi.raghavan@gmail.com
+    name: Preethi Raghavan
+    site: http://researcher.watson.ibm.com/researcher/view.php?person=us-praghav
+
 - title: Publicity Chair
   members:
-  - affiliation: UCL
+  - affiliation: University College London
     email: i.augenstein@ucl.ac.uk
     name: Isabelle Augenstein
     site: http://isabelleaugenstein.github.io/

@@ -106,6 +106,14 @@ h5, h6 { color: $primary-color; }
   text-decoration: underline;
 }
 
+.bullet-list ul {
+  list-style-position: inside;
+}
+
+.bullet-list li {
+  list-style-type: disc;
+  margin-left: 2em;
+}
 
 /*
 #introduction {
