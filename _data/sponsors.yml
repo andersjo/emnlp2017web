@@ -2,18 +2,14 @@
   members:
   - name: Google
     shortname: google
-  - name: Baidu
-    shortname: baidu
   - name: Amazon
     shortname: amazon
 
 - category: Gold Sponsors
   members:
-  - name: Bloomberg
-    shortname: bloomberg
-  - name: Citadel
-    shortname: citadel
+  - name: IBM
+    shortname: ibm_research
+  - name: Microsoft
+    shortname: microsoft
   - name: Ebay
     shortname: ebay
-  - name: Facebook
-    shortname: facebook

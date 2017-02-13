@@ -71,8 +71,7 @@ layout: default
 
 </div>
 
-<!--
-<div id="sponsors" class="card-panel">
+<div id="sponsors" class="section">
 
 
 {% for sponsor_group in site.data.sponsors %}
@@ -84,7 +83,7 @@ layout: default
   <ul>
   {% for sponsor in sponsor_group.members %}
     <li>
-       <a href="{{ sponsor.name }}"><img alt="{{ sponsor.name }}" src="logos/placeholder.png" style="width:150px !important"/></a>
+       <a href="{{ sponsor.name }}"><img alt="{{ sponsor.name }}" src="logos/{{ sponsor.shortname }}.png" style="width:200px !important"/></a>
     </li>
 
   {% endfor %}
@@ -99,7 +98,6 @@ layout: default
 
 <div style="clear: both"></div>
 </div>
-!-->
 
 
 <!--
