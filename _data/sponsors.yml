@@ -4,6 +4,8 @@
     shortname: google
   - name: Amazon
     shortname: amazon
+  - name: Baidu
+    shortname: baidu
 
 - category: Gold Sponsors
   members:
@@ -13,3 +15,10 @@
     shortname: microsoft
   - name: Ebay
     shortname: ebay
+
+- category: Silver Sponsors
+  members:
+  - name: Nuance
+    shortname: nuance
+  - name: Oracle
+    shortname: oracle
