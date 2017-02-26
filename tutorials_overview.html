@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="section">
+  <h2>Tutorials</h2>
+  <p>
+  Two days of tutorials are scheduled before the main conference, on September 7 and 8.
+  The tutorials are organised in morning and afternoon slots of three hours each.
+  </p>
+
+  {% for tutorial in site.tutorials %}
+  <div class="row">
+    <div class="card-panel">
+      <div class="col s12 l3">
+        <h5>{{ tutorial.nickname }}</h5>
+        <div>
+          {{ tutorial.slot }}
+        </div>
+      </div>
+      <div class="col s12 l9">
+          <h5 style="color: black">{{ tutorial.title }}</h5>
+          <p><i>{{ tutorial.blurb }}</i></p>
+
+          <p>Presented by: {{ tutorial.presenters }}</p>
+
+          <p>More details at the <a href="{{ tutorial.url }}">workshop page</a>.</p>
+      </div>
+      <div class="clear:both">&nbsp;</div>
+    </div>
+  </div>
+ {% endfor %}
+
+</div>

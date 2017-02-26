@@ -1,10 +1,10 @@
 @import url('colours.css');
 
 .clearfix:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
     visibility: hidden;
 }
 
@@ -398,7 +398,7 @@ UL.titles LI {
  padding-bottom: 1px
 }
 
-.update { 
+.update {
  margin-left: -55px !important;
  padding-left: 55px;
  background: url(update.png) top left no-repeat;
@@ -572,19 +572,19 @@ DIV#talks, DIV#posters {
 }
 
 /* END -------- program info -------- */
- 
+
 @media screen and (max-width: 900px) {
 
  body {
   width: auto;
-  margin: 0 auto; 
+  margin: 0 auto;
  }
 
  .header, #content, #secondary DIV, #footer DIV {
    width: auto;
    margin: auto;
  }
- 
+
  #content {
   margin-top: -200px;
  }
@@ -595,13 +595,13 @@ DIV#talks, DIV#posters {
    right: auto;
    width: auto;
  }
- 
+
  #intro-left H2 {
    float: left;
    padding-left: 10px;
    margin-right: 0;
  }
- 
+
  #intro-right {
    clear: left;
  }
@@ -610,17 +610,17 @@ DIV#talks, DIV#posters {
    margin: 0;
  }
 
- #page #content H1, 
- #page #content H2, 
- #page #content H3, 
- #page #content H4, 
+ #page #content H1,
+ #page #content H2,
+ #page #content H3,
+ #page #content H4,
  #page #content H5 {
    margin-left: 10px;
    margin-right: 10px;
  }
 
  #page #content P,
- #content #hotels UL, 
+ #content #hotels UL,
  #content #hotels IMG,
  #content DIV UL,
  #content DIV P {
@@ -630,14 +630,14 @@ DIV#talks, DIV#posters {
  #page #content UL {
    margin-left: 90px;
  }
- 
+
  #committees DIV UL LI
  {
     float: none;
     margin-left: 219px;
     margin-bottom: 1.4em;
  }
- 
+
 }
 
 
@@ -662,7 +662,7 @@ DIV#talks, DIV#posters {
 }
 
 
-tr:nth-child(even) 
+tr:nth-child(even)
 {
 	background-color: #fdf3f0;
 }
