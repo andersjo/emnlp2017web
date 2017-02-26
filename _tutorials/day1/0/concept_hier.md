@@ -6,7 +6,7 @@ presenters: Marius Pasca
 slot: Day 1, morning
 blurb: "The tutorial examines the theoretical foundations of subsumption, and its practical embodiment through IsA relations compiled manually or extracted automatically. It addresses IsA relations from their formal definition; through practical choices made in their representation within the larger and more widely-used of the available knowledge resources; to their automatic acquisition from document repositories, as opposed to their manual compilation by human contributors; to their impact in text analysis and information retrieval."
 ---
-<div class="section" markdown="1">
+<div class="section tutorial" markdown="1">
 
 ## Acquisition, Representation and Usage of Conceptual Hierarchies
 

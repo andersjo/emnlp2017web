@@ -7,7 +7,7 @@ slot: Day 1, afternoon
 blurb: "The goal of this tutorial is to offer a comprehensive presentation of recent methods that rely on graph-based text representations to deal with various tasks in NLP and IR. We will describe basic as well as novel graph theoretic concepts and we will examine how they can be applied in a wide range of text-related application domains, including IR, text categorization and keyword extraction."
 ---
 
-<div class="section" markdown="1">
+<div class="section tutorial" markdown="1">
 
 ## Graph-based Text Representations: Boosting Text Mining, NLP and Information Retrieval with Graphs
 

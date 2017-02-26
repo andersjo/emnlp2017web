@@ -6,7 +6,7 @@ presenters: Pushpak Bhattacharyya, Aditya Joshi
 slot: Day 1, morning
 blurb: "Sarcasm is a form of verbal irony that is intended to express contempt or ridicule. Motivated by challenges posed by sarcastic text to sentiment analysis, computational approaches to sarcasm have witnessed a growing interest at NLP forums in the past decade. Computational sarcasm refers to automatic approaches pertaining to sarcasm. The tutorial will provide a bird’s-eye view of the research in computational sarcasm for text, while focusing on significant milestones."
 ---
-<div class="section" markdown="1">
+<div class="section tutorial" markdown="1">
 
 ## Computational Sarcasm
 

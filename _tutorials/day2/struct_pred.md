@@ -1,11 +1,12 @@
 ---
 layout: default
+nickname: StructPred
 title: "A Unified Framework for Structured Prediction: From Theory to Practice"
 presenters: Wei Lu
 slot: Day 2, afternoon
 blurb: "Structured prediction is one of the most important topics in various fields, including machine learning, computer vision, natural language processing and bioinformatics. In this tutorial, we present a novel framework that unifies various structured prediction models."
 ---
-<div class="section" markdown="1">
+<div class="section tutorial" markdown="1">
 ## A Unified Framework for Structured Prediction: From Theory to Practice
 
 ### Objectives

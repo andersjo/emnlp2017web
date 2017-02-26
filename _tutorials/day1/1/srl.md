@@ -6,7 +6,7 @@ presenters: Diego Marcheggiani, Michael Roth, Ivan Titov, Benjamin Van Durme
 slot: Day 1, afternoon
 blurb: "This is the 3rd tutorial on semantic role labeling, following the first well-attended tutorials at NAACL in 2013 and ACL in 2009. We will introduce the task of semantic role labeling (SRL) and discuss recent research directions related to the task. The audience of this tutorial will learn about the linguistic background and motivation for semantic roles, and also about a range of computational models for this task, from early approaches to the current state-of-the-art. We will further discuss recently proposed variations of the traditional SRL task, including topics such as AMR parsing, semantic proto-role labeling and implicit argument linking. "
 ---
-<div class="section" markdown="1">
+<div class="section tutorial" markdown="1">
 
 ## Semantic Role Labeling
 

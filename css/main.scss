@@ -115,6 +115,16 @@ h5, h6 { color: $primary-color; }
   margin-left: 2em;
 }
 
+
+.tutorial ul {
+  list-style-position: inside;
+}
+
+.tutorial li {
+  list-style-type: disc;
+  margin-left: 2em;
+}
+
 /*
 #introduction {
  background-color: $primary-color;
