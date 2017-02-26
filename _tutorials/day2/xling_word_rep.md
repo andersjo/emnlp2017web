@@ -3,7 +3,7 @@ layout: default
 nickname: XlingWordRep
 title: "Cross-Lingual Word Representations: Induction and Evaluation"
 presenters: Manaal Faruqui, Anders Søgaard, Ivan Vulić
-slot: Day 2, afternoon
+slot: Sep 8, afternoon
 blurb: "Cross-lingual modeling is an integral part of machine translation and multilingual search, but also enables better modeling of low-resource languages through cross-lingual transfer. In this tutorial, we will focus on: (i) how to induce cross-lingual word representations (covering both bilingual and multilingual ones) from various data types and resources (e.g., parallel data, comparable data, non-aligned monolingual data in different languages, dictionaries and theasuri, or, even, images and large-scale usage statistics); (ii) how to evaluate such representations, intrinsically and extrinsically."
 ---
 

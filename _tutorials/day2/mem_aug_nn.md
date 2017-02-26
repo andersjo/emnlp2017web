@@ -3,7 +3,7 @@ layout: default
 nickname: MemAugNN
 title: "Memory Augmented Neural Networks for Natural Language Processing"
 presenters: Caglar Gulcehre, Sarath Chandar
-slot: Day 2, afternoon
+slot: Sep 8, afternoon
 blurb: "Memory Augmented Neural Networks (MANNs) can store and read information from an external memory. While the traditional machine learning algorithms (including neural networks) accepts an input and process it to perform a prediction, MANNs can use the explicit memory to store necessary information during the execution of the task and retrieve information from the memory when needed. This can be helpful for complex tasks like reasoning, planning, question answering, and dialogue systems. The aim of this tutorial is to introduce this paradigm of memory augmented neural networks to the NLP community since this has large scope in several complex NLP tasks like question answering, reading comprehension, dialogue systems, and summarization."
 ---
 
