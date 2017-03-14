@@ -6,6 +6,8 @@
     shortname: amazon
   - name: Baidu
     shortname: baidu
+  - name: Apple
+    shortname: apple
 
 - category: Gold Sponsors
   members:
@@ -15,6 +17,8 @@
     shortname: microsoft
   - name: Ebay
     shortname: ebay
+  - name: SAP
+    shortname: sap
 
 - category: Silver Sponsors
   members:
@@ -22,3 +26,12 @@
     shortname: nuance
   - name: Oracle
     shortname: oracle
+  - name: Sogou
+    shortname: sogou
+  - name: Huawei Technologies
+    shortname: huawei
+
+- category: Bronze Sponsors
+  members:
+  - name: Grammarly
+    shortname: grammarly
