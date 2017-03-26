@@ -19,6 +19,8 @@
     shortname: ebay
   - name: SAP
     shortname: sap
+  - name: Textkernel
+    shortname: textkernel
 
 - category: Silver Sponsors
   members:

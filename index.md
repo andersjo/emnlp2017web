@@ -83,7 +83,7 @@ layout: default
   <ul>
   {% for sponsor in sponsor_group.members %}
     <li>
-       <a href="{{ sponsor.name }}"><img alt="{{ sponsor.name }}" src="logos/{{ sponsor.shortname }}.png" style="width:200px !important"/></a>
+       <a href="#{{ sponsor.name }}"><img alt="{{ sponsor.name }}" src="logos/{{ sponsor.shortname }}.png" style="width:200px !important"/></a>
     </li>
 
   {% endfor %}
