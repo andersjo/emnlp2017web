@@ -8,6 +8,8 @@
     shortname: baidu
   - name: Apple
     shortname: apple
+  - name: Facebook
+    shortname: facebook
 
 - category: Gold Sponsors
   members:
@@ -21,6 +23,8 @@
     shortname: sap
   - name: Textkernel
     shortname: textkernel
+  - name: Maluuba
+    shortname: maluuba
 
 - category: Silver Sponsors
   members:
@@ -32,8 +36,16 @@
     shortname: sogou
   - name: Huawei Technologies
     shortname: huawei
+  - name: Duolingo
+    shortname: duolingo
+  - name: CVTE
+    shortname: cvte
+  - name: Wizkids
+    shortname: wizkids
 
 - category: Bronze Sponsors
   members:
   - name: Grammarly
     shortname: grammarly
+  - name: Yandex
+    shortname: yandex
