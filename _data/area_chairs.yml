@@ -7,11 +7,8 @@
       tze"}
   - {affiliation: UC Irvine, email: sameer@uci.edu, name: Sameer Singh}
   - {affiliation: MSR, email: scottyih@microsoft.com, name: Scott Wen-tau Yih}
-  title: Information Extraction, Information Retrieval, and Question Answering
-- members:
   - {affiliation: SUNY Albany, email: tomek@albany.edu, name: Tomek Strzalkowski}
-  title: Information Extraction, Information Retrieval, and Question Answering OR
-    Text Mining and NLP Applications
+  title: Information Extraction, Information Retrieval, and Question Answering
 - members:
   - {affiliation: University of Toronto, email: fidler@cs.toronto.edu, name: Sanja
       Fidler}
@@ -102,4 +99,5 @@
   - {affiliation: KU Leuven, email: sien.moens@cs.kuleuven.be, name: Marie-Francine
       Moens}
   - {affiliation: University of Houston, email: solorio@cs.uh.edu, name: Thamar Solorio}
+  - {affiliation: University of Sheffield, email: a.vlachos@sheffield.ac.uk , name: Andreas Vlachos}
   title: Text Mining and NLP Applications
