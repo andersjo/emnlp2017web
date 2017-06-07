@@ -5,9 +5,9 @@ layout: default
 <div class="section">
 <h2>Conference hotels</h2>
 
-<p>The hotels below are all close to the conference venue.
-  We'll have more information about the choices later, but if you're
-  eager to book, it's possible to do so now.
+<p>The recommended hotels are all in close proximity to the conference venue.
+   All prices are early-bird rates negotiated by the conference organisers, and may become
+   unavailable closer to the conference dates. For regular prices, please see the websites.
 </p>
 
 {% for hotel in site.data.hotels %}
@@ -15,9 +15,20 @@ layout: default
     <div class="card-panel">
       <div class="col s12 l12">
           <h5 style="color: black">{{ hotel.name }}</h5>
-          <p>Quote when booking: <i>{{ hotel.ref }}</i></p>
+          <p>{{ hotel.description }}</p>
 
-          <p>The hotels can be contacted at <a href="mailto:{{ hotel.email }}">{{ hotel.email }}</a></p>
+          <ul>
+            <li>
+              <i class="material-icons">email</i> <a href="mailto:{{ hotel.email }}">{{ hotel.email }}</a>
+            </li>
+            <li>
+              <i class="material-icons">web</i> <a href="{{ hotel.website }}">{{ hotel.website }}</a>
+            </li>
+            <li>
+              <i class="material-icons">location_on</i> {{ hotel.address }}
+            </li>
+
+          <p>Please quote the following reference when booking: <i>{{ hotel.ref }}</i></p>
 
       </div>
       <div class="clear:both">&nbsp;</div>
