@@ -10,6 +10,10 @@
     shortname: apple
   - name: Facebook
     shortname: facebook
+  - name: Bloomberg
+    shortname: Bloomberg
+  - name: Samsung
+    shortname: samsung
 
 - category: Gold Sponsors
   members:
@@ -27,6 +31,9 @@
     shortname: maluuba
   - name: Recruit Institute of Technology
     shortname: rit
+  - name: Deloitte
+    shortname: deloitte
+
 
 - category: Silver Sponsors
   members:
