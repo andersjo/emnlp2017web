@@ -9,16 +9,29 @@ layout: default
   <ul class="collection">
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>EMNLP 2017 announced</big></span>
-      <p>Next year's EMNLP will take place in Copenhagen.
-      The main conference is September 9 - 11, preceded by two days of workshops and tutorials,
-      September 7 - 8. See <a href="call-for-papers.html">call for papers</a>.
+      <span class="title"><big>Author instructions</big></span>
+      <p>The camera ready submission deadline is on July 21, 2017.
+      We're putting the finishing touches on the LaTeX style files,
+      which will be posted here soon.
       <br>
       <span class="right-align">
-         <i>Posted on November 22, 2016</i>
+         <i>Posted on June 29, 2017</i>
       </span>
       </p>
     </li>
+
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Special rates for conference hotels expiring</big></span>
+      <p>The specially negotiated prices for conference hotels are expiring on July 7, 2017,
+      where pricing will revert to normal rates. Book now to get the discounts!
+      <br>
+      <span class="right-align">
+         <i>Posted on June 29, 2017</i>
+      </span>
+      </p>
+    </li>
+
 
   </ul>
 
