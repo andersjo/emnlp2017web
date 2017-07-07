@@ -6,7 +6,22 @@ layout: default
   <h3>Announcements</h3>
 </div>
 
+
+
   <ul class="collection">
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Author instructions posted</big></span>
+    <p>See <a href="author-instructions.html">author instructions</a> for
+    preparing the camera ready paper. Note that the paper templates have been updated.
+    Camera ready submissions must use the updated versions.
+    <br>
+    <span class="right-align">
+       <i>Posted on July 7, 2017</i>
+    </span>
+    </p>
+  </li>
+
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Registration still not up</big></span>
@@ -15,20 +30,6 @@ layout: default
       <br>
       <span class="right-align">
          <i>Posted on July 5, 2017</i>
-      </span>
-      </p>
-    </li>
-
-
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Author instructions</big></span>
-      <p>The camera ready submission deadline is on July 21, 2017.
-      We're putting the finishing touches on the LaTeX style files,
-      which will be posted here soon.
-      <br>
-      <span class="right-align">
-         <i>Posted on June 29, 2017</i>
       </span>
       </p>
     </li>
