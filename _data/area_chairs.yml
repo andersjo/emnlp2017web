@@ -1,13 +1,14 @@
 - members:
-  - {affiliation: University of Arizona, email: msurdeanu@email.arizona.edu, name: Mihai
-      Surdeanu (QA)}
   - {affiliation: Singapore Management University, email: jingjiang@smu.edu.sg, name: Jing
       Jiang}
+  - {affiliation: University of Washington, email: mausam@cs.washington.edu, name: Mausam }
   - {affiliation: LMU Munich, email: inquiries@cislmu.org, name: "Hinrich Sch\xFC\
       tze"}
   - {affiliation: UC Irvine, email: sameer@uci.edu, name: Sameer Singh}
-  - {affiliation: MSR, email: scottyih@microsoft.com, name: Scott Wen-tau Yih}
   - {affiliation: SUNY Albany, email: tomek@albany.edu, name: Tomek Strzalkowski}
+  - {affiliation: University of Arizona, email: msurdeanu@email.arizona.edu, name: Mihai
+      Surdeanu}
+  - {affiliation: MSR, email: scottyih@microsoft.com, name: Scott Wen-tau Yih}
   title: Information Extraction, Information Retrieval, and Question Answering
 - members:
   - {affiliation: University of Toronto, email: fidler@cs.toronto.edu, name: Sanja
