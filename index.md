@@ -9,18 +9,30 @@ layout: default
 
 
   <ul class="collection">
-  <li class="collection-item avatar">
-    <i class="material-icons circle">info_outline</i>
-    <span class="title"><big>Author instructions posted</big></span>
-    <p>See <a href="author-instructions.html">author instructions</a> for
-    preparing the camera ready paper. Note that the paper templates have been updated.
-    Camera ready submissions must use the updated versions.
-    <br>
-    <span class="right-align">
-       <i>Posted on July 7, 2017</i>
-    </span>
-    </p>
-  </li>
+
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Scholarships and student volunteers</big></span>
+      <p>Want to volunteer at EMNLP or apply for a scholarship to cover some of your costs?
+      See our call for applications <a href="student-scholarship.html">here</a>.
+      <br>
+      <span class="right-align">
+         <i>Posted on July 7, 2017</i>
+      </span>
+      </p>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Author instructions posted</big></span>
+      <p>See <a href="author-instructions.html">author instructions</a> for
+      preparing the camera ready paper. Note that the paper templates have been updated.
+      Camera ready submissions must use the updated versions.
+      <br>
+      <span class="right-align">
+         <i>Posted on July 7, 2017</i>
+      </span>
+      </p>
+    </li>
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
