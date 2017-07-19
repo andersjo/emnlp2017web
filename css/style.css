@@ -473,36 +473,6 @@ DIV#talks, DIV#posters {
  border-top: 1px solid #cccceb;
 }
 
-.fees {
-  margin: 0 0 2em 80px;
-  padding: 5px 10px;
-  border-spacing: 0;
-}
-
-.fees span {
-  color: #555;
-  font-size: 80%;
-  display: block;
-}
-
-.fees td, .fees th {
-  padding-top: 10px;
-  width: 160px;
-  vertical-align: top;
-}
-
-.fees th {
-  width: 240px;
-}
-
-.fees th, .fees thead {
-  font-weight: normal;
-  font-size: 110%;
-}
-
-.fees thead th {
-  font-weight: bold;
-}
 
 .action {
   margin-top: 1.5em;
@@ -675,8 +645,4 @@ table, th, td {
     border: 1px solid gray;
 	empty-cells: hide;
 	padding: 8px;
-}
-
-#fees {
-	text-align: center;
 }

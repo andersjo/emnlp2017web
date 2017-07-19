@@ -12,12 +12,13 @@ layout: default
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Registration still not up</big></span>
-      <p>We apologise for the delay in setting up the registration site.
-      It will be up before July <strike>15</strike> 19.
+      <span class="title"><big>Registration finally up!</big></span>
+      <p>Go <a href="https://aclweb.org/conference/emnlp-2017-conference-registration">register</a>
+      for the conference now.
+      The <a href="registration.html">registration page</a> has an overview of the fees.
       <br>
       <span class="right-align">
-         <i>Posted on July 14, 2017</i>
+         <i>Posted on July 19, 2017</i>
       </span>
       </p>
     </li>
