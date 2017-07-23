@@ -6,8 +6,6 @@ layout: default
   <h3>Announcements</h3>
 </div>
 
-
-
   <ul class="collection">
 
     <li class="collection-item avatar">
@@ -15,10 +13,9 @@ layout: default
       <span class="title"><big>Accepted papers </big></span>
       <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP 
       is up.
-      The <a href="registration.html">registration page</a> has an overview of the fees.
       <br>
       <span class="right-align">
-         <i>Posted on July 19, 2017</i>
+         <i>Posted on July 23, 2017</i>
       </span>
       </p>
     </li>  
