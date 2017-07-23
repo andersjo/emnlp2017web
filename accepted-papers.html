@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="section">
+<h2>Papers accepted for publication</h2>
+
+<p>EMNLP 2017 accepted a total of 323 papers. Of these 216 are long papers,
+  and 107 are short papers.
+</p>
+
+<table class="striped">
+  <col style="width:30%">
+  <col style="width:60%">
+  <col style="width:15%">
+  <thead>
+    <th>Authors</th>
+    <th>Title</th>
+    <th>Paper type</th>
+  </thead>
+  <tbody>
+
+{% for paper in site.data.accepted_papers %}
+<tr>
+  <td>{{ paper.authors }}</td>
+  <td><em>{{ paper.title }}</em></td>
+  <td>{{ paper.submission_type }}</td>
+</tr>
+{% endfor %}
+
+  </tbody>
+</table>
+
+
+</div>

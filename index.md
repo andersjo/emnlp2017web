@@ -12,6 +12,19 @@ layout: default
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Accepted papers </big></span>
+      <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP 
+      is up.
+      The <a href="registration.html">registration page</a> has an overview of the fees.
+      <br>
+      <span class="right-align">
+         <i>Posted on July 19, 2017</i>
+      </span>
+      </p>
+    </li>  
+
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Registration finally up!</big></span>
       <p>Go <a href="https://aclweb.org/conference/emnlp-2017-conference-registration">register</a>
       for the conference now.
