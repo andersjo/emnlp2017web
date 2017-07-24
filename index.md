@@ -8,10 +8,24 @@ layout: default
 
   <ul class="collection">
 
+
+
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Presentation format decisions on the way</big></span>
+      <p>The oral/poster decisions will be posted in a couple of days.
+      <br>
+      <span class="right-align">
+         <i>Posted on July 24, 2017</i>
+      </span>
+      </p>
+    </li>  
+
+
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Accepted papers </big></span>
-      <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP 
+      <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP
       is up.
       <br>
       <span class="right-align">
