@@ -27,11 +27,35 @@
 
 - name: Absalon
   email: booking@absalon-hotel.dk
-  ref: reservation 060917 Association for Computational Linguistics
+  ref: special rate has expired
   description: |
-    A renovated town house with modern, comfortable, and remarkably quiet double rooms for DKK 1485.
+    A renovated town house with modern, comfortable, and remarkably quiet double rooms.
     The hotel has a cozy inner court yard and is less than 5min from both the train station and the conference center on Istedgade,
     once an infamous address, but now the lively center of Vesterbro.
 
   address: Helgolandsgade 15, 1653 København V
   website: http://absalon-hotel.dk
+
+- name: Tivoli Hotel
+  description: |
+    4 stars, 18 min walk.
+  address: Arni Magnussons Gade, København V
+  website:  http://www.tivolihotel.dk
+
+- name: Best Western Hotel Hebron
+  description: |
+    3 stars, 4 min walk.
+  address: Helgolandsgade 4, 1653 København V
+  website:  http://www.hebron.dk
+
+- name: CabInn City
+  description: |
+    2 stars, 11 min walk.
+  address: Helgolandsgade 4, 1653 København V
+  website:  http://www.hebron.dk
+
+- name: WakeUp Copenhagen
+  description: |
+    2 stars, 15 min walk.
+  address: Carsten Niebuhrs Gade, København V
+  website: http://www.wakeupcopenhagen.dk

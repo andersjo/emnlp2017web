@@ -5,19 +5,28 @@ layout: default
 <div class="section">
 <h2>Conference hotels</h2>
 
-<p>The recommended hotels are all in close proximity to the conference venue.
-   All prices are early-bird rates negotiated by the conference organisers, and will only be available
-   up to July 7, 2017.
-</p>
+<p>The recommended hotels are all in close proximity to the conference venue.</p>
 <p>
-   For regular prices, please see the websites.
+   Some hotels still have a few rooms with early-bird rates negotiated by the conference organisers.
+   We advise you to check directly with the hotel. For regular prices, please see the websites.
 </p>
+
+<h4>Booking trouble at DGI byen</h4>
 <p>
 Unfortunately, the hotel DGI byen only has a Danish website, which makes it challenging
 to book unless you speak the language.
 We've put together a small document with <a href="/downloads/BookingDGI-BYEN.pdf">advice</a>
 on how to deal with this.</p>
 
+<h4>Room sharing</h4>
+<p>
+  Rooms in Copenhagen are getting sparse.
+  If you are looking for roommates to save money on lodging,
+  sign up at <a href="http://conferenceshare.co">conferenceshare.co</a> to find attendees with whom you can share hotel room,
+  Airbnb, taxi, or car rental.
+<p>
+
+<h4>Hotels</h4>
 {% for hotel in site.data.hotels %}
   <div class="row">
     <div class="card-panel">
@@ -26,9 +35,11 @@ on how to deal with this.</p>
           <p>{{ hotel.description }}</p>
 
           <ul>
+            {% if hotel.email %}
             <li>
               <i class="material-icons">email</i> <a href="mailto:{{ hotel.email }}">{{ hotel.email }}</a>
             </li>
+            {% endif %}
             <li>
               <i class="material-icons">web</i> <a href="{{ hotel.website }}">{{ hotel.website }}</a>
             </li>
@@ -36,7 +47,9 @@ on how to deal with this.</p>
               <i class="material-icons">location_on</i> {{ hotel.address }}
             </li>
 
+          {% if hotel.ref %}
           <p>Please quote the following reference when booking: <i>{{ hotel.ref }}</i></p>
+          {% endif %}
 
       </div>
       <div class="clear:both">&nbsp;</div>
