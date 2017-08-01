@@ -24,6 +24,9 @@ layout: default
 
       <p>Should any of the guests wish to explore the city by bicycle these can be rented from the hotel at affordable prices.</p>
 
+      <p>The city of Copenhagen also offers free bicycles that can be picked up from locations around the city.</p>
+
+
     </div>
     <div class="col s4">
       <img src="images/venue_hall.jpg" width="100%"/>
