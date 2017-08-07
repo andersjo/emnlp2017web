@@ -11,7 +11,7 @@ layout: default
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Social events</big></span>
-      <p>Reserve time in your calendar for the openining reception
+      <p>Reserve time in your calendar for the opening reception
       on Friday 8th 7-10pm, and the social event on Sunday 10th 6-10pm.
       <br>
       <span class="right-align">
