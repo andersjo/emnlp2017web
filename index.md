@@ -10,6 +10,18 @@ layout: default
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
+      <span class="title"><big>Social events</big></span>
+      <p>Reserve time in your calendar for the openining reception
+      on Friday 8th 7-10pm, and the social event on Sunday 10th 6-10pm.
+      <br>
+      <span class="right-align">
+         <i>Posted on August 7, 2017</i>
+      </span>
+      </p>
+    </li>  
+
+    <li class="collection-item avatar">
+      <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Accepted papers </big></span>
       <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP
       is up.
