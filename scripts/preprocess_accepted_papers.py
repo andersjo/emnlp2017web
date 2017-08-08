@@ -10,7 +10,7 @@ def first_author_last_name(author_names):
     return last_name
 
 
-D = pd.read_excel("accepted_papers.xls")
+D = pd.read_excel("accepted_papers.xlsx")
 D = D.rename_axis(rename_column, axis='columns')
 D['first_author_last_name'] = D.authors.map(first_author_last_name)
 D['submission_type'] = D.submission_type.str.split().str[0]

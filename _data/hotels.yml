@@ -59,3 +59,42 @@
     2 stars, 15 min walk.
   address: Carsten Niebuhrs Gade, København V
   website: http://www.wakeupcopenhagen.dk
+
+- name: Axel Guldsmeden Hotel
+  description: |
+    4 stars, 3 min walk.
+  address: Helgolandsgade 11, 1653 København V
+  website: http://www.guldsmedenhotels.com
+
+- name: Scandic Hotel Webers
+  description: |
+    4 stars, 5 min walk.
+  address: Vesterbrogade 11B, 1620 København V
+  website: http://www.scandichotels.dk
+
+
+- name: Scandic Copenhagen
+  description: |
+    4 stars, 9 min walk.
+  address: Vester Søgade 6, 1601 København V
+  website: http://www.scandichotels.dk
+
+- name: 66 Guldsmeden
+  description: |
+    3 stars, 9 min walk.
+  address: Vesterbrogade 66, 1620 København V
+  website: http://www.guldsmedenhotels.com
+
+
+- name: CabInn Express
+  description: |
+    3 stars, 18 min walk.
+  address: Danasvej 32, 1910 Frederiksberg C
+  website: http://www.cabinn.com
+
+
+- name: Urban House Copenhagen
+  description: |
+    2 stars, 3 min walk
+  address: Colbjørnsensgade 11, 1652 København V
+  website: http://www.urbanhouse.me
