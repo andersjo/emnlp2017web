@@ -33,6 +33,8 @@
     shortname: rit
   - name: Deloitte
     shortname: deloitte
+  - name: Zalando
+    shortname: zalando
 
 
 - category: Silver Sponsors
@@ -51,6 +53,10 @@
     shortname: cvte
   - name: Wizkids
     shortname: wizkids
+  - name: Snap Inc
+    shortname: snap
+  - name: Unsilo
+    shortname: unsilo
 
 - category: Bronze Sponsors
   members:
@@ -58,3 +64,8 @@
     shortname: grammarly
   - name: Yandex
     shortname: yandex
+  - name: NextAI
+    shortname: nextai
+  - name: Trustpilot
+    shortname: trustpilot
+
