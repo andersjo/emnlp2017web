@@ -1,0 +1,22 @@
+,title,authors,first_author_last_name
+10,QUINT: Interpretable Question Answering over Knowledge Bases,"Abdalghani Abujabal, Rishiraj Saha Roy, Mohamed Yahya and Gerhard Weikum",abujabal
+19,LangPro: Natural Language Theorem Prover,Lasha Abzianidze,abzianidze
+7,The Projector: An Interactive Annotation Projection Visualization Tool,Alan Akbik and Roland Vollgraf,akbik
+2,An Analysis and Visualization Tool for Case Study Learning of Linguistic Concepts,"Cecilia Ovesdotter Alm, Benjamin Meyers and Emily Prud'hommeaux",alm
+16,NeuroNER: an easy-to-use program for named-entity recognition based on neural networks,"Franck Dernoncourt, Ji Young Lee and Peter Szolovits",dernoncourt
+3,GraphDocExplore: A Framework for the Experimental Comparison of Graph-based Document Exploration Techniques,Tobias Falke and Iryna Gurevych,falke
+1,Argotario: Computational Argumentation Meets Serious Games,"Ivan Habernal, Raffael Hannemann, Christian Pollak, Christopher Klamm, Patrick Pauli and Iryna Gurevych",habernal
+12,MoodSwipe: A Soft Keyboard that Suggests MessageBased on User-Specified Emotions,"Chieh-Yang Huang, Tristan Labetoulle, Ting-Hao Huang, Yi-Pei Chen, Hung-Chen Chen, Vallari Srivastava and Lun-Wei Ku",huang
+20,Interactive Visualization and Manipulation of Attention-based Neural Machine Translation,"Jaesong Lee, Joong-Hwi Shin and Jun-Seok Kim",lee
+6,KnowYourNyms? A Game of Semantic Relationships,"Ross Mechanic, Dean Fulgoni, Hannah Cutler, Sneha Rajana, Zheyuan Liu, Bradley Jackson, Anne Cocos, Chris Callison-Burch and Marianna Apidianaki",mechanic
+13,ParlAI: A Dialog Research Software Platform,"Alexander Miller, Will Feng, Dhruv Batra, Antoine Bordes, Adam Fisch, Jiasen Lu, Devi Parikh and Jason Weston",miller
+15,"Unsupervised, Knowledge-Free, and Interpretable Word Sense Disambiguation","Alexander Panchenko, Fide Marten, Eugen Ruppert, Stefano Faralli, Dmitry Ustalov, Simone Paolo Ponzetto and Chris Biemann",panchenko
+17,SupWSD: A Flexible Toolkit for Supervised Word Sense Disambiguation,"Simone Papandrea, Alessandro Raganato and Claudio Delli Bovi",papandrea
+11,Function Assistant: A Tool for NL Querying of APIs,Kyle Richardson and Jonas Kuhn,richardson
+14,HeidelPlace: An Extensible Framework for Geoparsing,"Ludwig Richter, Johanna Geiß, Andreas Spitz and Michael Gertz",richter
+8,Interactive Visualization for Linguistic Structure,"Aaron Sarnat, Vidur Joshi, Cristian Petrescu-Prahova, Alvaro Herrasti, Brandon Stilson and Mark Hopkins",sarnat
+0,The NLTK FrameNet API: Designing for Discoverability with a Rich Linguistic Resource,Nathan Schneider and Chuck Wooters,schneider
+9,DLATK: Differential Language Analysis ToolKit,"H. Andrew Schwartz, Salvatore Giorgi, Maarten Sap, Patrick Crutchley, Lyle Ungar and Johannes Eichstaedt",schwartz
+18,Interactive Abstractive Summarization for Event News Tweets,"Ori Shapira, Hadar Ronen, Meni Adler, Yael Amsterdamer, Judit Bar-Ilan and Ido Dagan",shapira
+4,SGNMT -- A Flexible NMT Decoding Platform for Quick Prototyping of New Models and Search Strategies,"Felix Stahlberg, Eva Hasler, Danielle Saunders and Bill Byrne",stahlberg
+5,StruAP: A Tool for Bundling Linguistic Trees through Structure-based Abstract Pattern,"Kohsuke Yanai, Misa Sato, Toshihiko Yanase, Kenzo Kurotsuchi, Yuta Koreeda and Yoshiki Niwa",yanai

@@ -10,7 +10,8 @@ layout: default
 </p>
 
 <p>Jump to <a href="#short-papers">short papers</a>,
-  <a href="#long-papers">long papers</a>.
+  <a href="#long-papers">long papers</a>,
+  <a href="#demo-papers">demo papers</a>.
 </p>
 
 <h3 id="short-papers">Short papers</h3>
@@ -46,6 +47,28 @@ layout: default
   <tbody>
 
 {% assign papers = site.data.accepted_papers | where: "submission_type", "Long" %}
+{% for paper in papers %}
+<tr>
+  <td>{{ paper.authors }}</td>
+  <td><em>{{ paper.title }}</em></td>
+</tr>
+{% endfor %}
+
+  </tbody>
+</table>
+
+
+<h3 id="demo-papers">Demo papers</h3>
+<table class="striped">
+  <col style="width:35%">
+  <col style="width:65%">
+  <thead>
+    <th>Authors</th>
+    <th>Title</th>
+  </thead>
+  <tbody>
+
+{% assign papers = site.data.accepted_demo_papers %}
 {% for paper in papers %}
 <tr>
   <td>{{ paper.authors }}</td>
