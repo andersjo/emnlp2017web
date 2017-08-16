@@ -255,3 +255,27 @@ body>.container {
 .registration-fees thead th {
   text-align: right;
 }
+
+.program-session {
+    padding: 1em;
+}
+
+ul .paper, ul .poster {
+    font-size: 0.8em;
+    line-height: 1.2em;
+
+}
+
+ul .paper li, ul .poster li {
+    margin-bottom: 0.7em;
+}
+
+.paper .authors, .poster .authors {
+    font-weight: bold;
+}
+
+.paper .authors, .poster .authors {
+    font-decoration: italic;
+}
+
+

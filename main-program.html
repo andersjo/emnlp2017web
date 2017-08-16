@@ -1,0 +1,82 @@
+---
+layout: default
+---
+
+<div class="section">
+<h2>Conference program</h2>
+
+
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        {% for day in site.data.main_conference %}
+          <li class="tab col s3"><a href="#{{ day.weekday }}">{{ day.weekday }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  {% for day in site.data.main_conference %}
+      <div id="{{ day.weekday }}" class="col s12 day-program">
+
+        {% for track in day.program %}
+            {% assign track_size = track|size %}
+            {% if track_size == 1 %}
+                {% assign session = track[0] %}
+
+              <ul class="collapsible" data-collapsible="accordion">
+                  {% for session in track %}
+                    <li>
+                      <div class="collapsible-header">
+                          <i class="material-icons">{{ site.data.session_type_to_icon[session.type] }}</i>
+                          {{ session.start_time }} - {{session.end_time }}: {{ session.title}}
+                      </div>
+                      <div class="collapsible-body"></div>
+                    </li>
+                  {% endfor %}
+              </ul>
+
+            {% else %}
+                {% assign first_session = track[0] %}
+
+                <p>Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}</p>
+
+              <ul class="collapsible" data-collapsible="accordion">
+                  {% for session in track %}
+                    <li>
+                      <div class="collapsible-header">
+                          <i class="material-icons">{{ site.data.session_type_to_icon[session.type] }}</i>
+                          {{ session.code}}: {{ session.title}}
+                          <div class="right">
+                              <span class="grey-text text-lighten-2" style="font-size: 0.8em">{{session.room }}</span>
+                          </div>
+                      </div>
+                      <div class="collapsible-body program-session">
+                            <ul class="paper">
+                                {% for talk in session.talks %}
+                                    <li>
+                                        <div class="timeslot">{{ talk.start_time }} - {{ talk.end_time }}</div>
+                                        <div class="authors">{{ talk.authors }}:</div>
+                                        <div class="title">{{ talk.title }}</div>
+                                {% endfor %}
+                            </ul>
+                            <ul class="poster">
+                                {% for poster in session.posters %}
+                                    <li>
+                                        <div class="authors">{{ poster.authors }}:</div>
+                                        <div class="title">{{ poster.title }}</div>
+
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                      </div>
+                    </li>
+                  {% endfor %}
+              </ul>
+
+            {% endif %}
+        {% endfor %}
+        </div>
+  {% endfor %}
+  </div>
+
+</div>
