@@ -46,8 +46,9 @@ layout: default
                       <div class="collapsible-header">
                           <i class="material-icons">{{ site.data.session_type_to_icon[session.type] }}</i>
                           {{ session.code}}: {{ session.title}}
-                          <div class="right">
+                          <div class="right hide-on-small-only">
                               <span class="grey-text text-lighten-2" style="font-size: 0.8em">{{session.room }}</span>
+                              <div style="clear: both"></div>
                           </div>
                       </div>
                       <div class="collapsible-body program-session">
