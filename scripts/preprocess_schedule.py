@@ -130,7 +130,7 @@ def classify_session(session):
         return 'poster'
     elif 'Invited Talk' in session['title']:
         return 'invited_talk'
-    elif 'Break' in session['title'] or 'Lunch' in session['title']:
+    elif 'Break' in session['title'] or 'Lunch' in session['title'] or 'Coffee' in session['title']:
         return 'break'
     else:
         return 'other'
