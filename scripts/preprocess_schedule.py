@@ -87,7 +87,7 @@ for rec in D.to_dict('records'):
 
         # Submission
         submission = submission_by_id[rec['pap_id']]
-        paper['title'] = submission['proctitle']
+        paper['title'] = submission['title']
         paper['authors'] = submission['authors']
 
         if 'start_time' in paper:
