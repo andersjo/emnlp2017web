@@ -35,6 +35,9 @@
     shortname: deloitte
   - name: Zalando
     shortname: zalando
+  - name: KPMG
+    shortname: kpmg
+    url: https://home.kpmg.com/dk/en/home.html
 
 
 - category: Silver Sponsors
@@ -68,4 +71,3 @@
     shortname: nextai
   - name: Trustpilot
     shortname: trustpilot
-
