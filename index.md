@@ -12,75 +12,24 @@ layout: default
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Social events</big></span>
       <p>Reserve time in your calendar for the opening reception
-      on Friday 8th 7-10pm, and the social event on Sunday 10th 6-10pm.
+      on Friday 8th 7-10pm, and the <a href="/social-event.html">social event</a> on Sunday 10th 6-10pm.
       <br>
       <span class="right-align">
-         <i>Posted on August 7, 2017</i>
+         <i>Posted on August 28, 2017</i>
       </span>
       </p>
     </li>  
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Accepted papers </big></span>
-      <p>The <a href="accepted-papers.html">list of papers</a> accepted for publication at EMNLP
-      is up.
+      <span class="title"><big>Program posted</big></span>
+      <p>Check the <a href="/program.html">full program</a> for the EMNLP 2017 conference.
       <br>
       <span class="right-align">
-         <i>Posted on July 23, 2017</i>
+         <i>Posted on August 17, 2017</i>
       </span>
       </p>
     </li>  
-
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Registration finally up!</big></span>
-      <p>Go <a href="https://aclweb.org/conference/emnlp-2017-conference-registration">register</a>
-      for the conference now.
-      The <a href="registration.html">registration page</a> has an overview of the fees.
-      <br>
-      <span class="right-align">
-         <i>Posted on July 19, 2017</i>
-      </span>
-      </p>
-    </li>
-
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Scholarships and student volunteers</big></span>
-      <p>Want to volunteer at EMNLP or apply for a scholarship to cover some of your costs?
-      See our call for applications <a href="student-scholarship.html">here</a>.
-      <br>
-      <span class="right-align">
-         <i>Posted on July 7, 2017</i>
-      </span>
-      </p>
-    </li>
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Author instructions posted</big></span>
-      <p>See <a href="author-instructions.html">author instructions</a> for
-      preparing the camera ready paper. Note that the paper templates have been updated.
-      Camera ready submissions must use the updated versions.
-      <br>
-      <span class="right-align">
-         <i>Posted on July 7, 2017</i>
-      </span>
-      </p>
-    </li>
-
-
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Special rates for conference hotels expiring</big></span>
-      <p>The specially negotiated prices for conference hotels are expiring on July 7, 2017,
-      where pricing will revert to normal rates. Book now to get the discounts!
-      <br>
-      <span class="right-align">
-         <i>Posted on June 29, 2017</i>
-      </span>
-      </p>
-    </li>
 
 
   </ul>
