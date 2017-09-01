@@ -8,6 +8,19 @@ layout: default
 
   <ul class="collection">
 
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Conference app</big></span>
+    <p>EMNLP has a nice app that you a <a href="/app.html">download</a>
+    to your mobile device.</p>
+    <br>
+    <span class="right-align">
+       <i>Posted on August 28, 2017</i>
+    </span>
+    </p>
+  </li>  
+
+
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Social events</big></span>
