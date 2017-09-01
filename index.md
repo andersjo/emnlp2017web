@@ -11,15 +11,14 @@ layout: default
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Conference app</big></span>
-    <p>EMNLP has a nice app that you a <a href="/app.html">download</a>
-    to your mobile device.</p>
+    <p>EMNLP has a neat app to help you keep up to date with the schedule.
+    <a href="/app.html">Get it</a> for your mobile device.
     <br>
     <span class="right-align">
-       <i>Posted on August 28, 2017</i>
+       <i>Posted on September 1, 2017</i>
     </span>
     </p>
   </li>  
-
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
