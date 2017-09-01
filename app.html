@@ -3,81 +3,16 @@ layout: default
 ---
 
 <div class="section">
-<h2>Papers accepted for publication</h2>
+<h2>Mobile app</h2>
 
-<p>EMNLP 2017 accepted a total of 323 papers. Of these 216 are long papers,
-  and 107 are short papers.
+
+<p>EMNLP 2017 smartphone app provides you with a comfortable tool for planning your participation in the Conference on Empirical Methods in Natural Language Processing. Browse the complete programme directly from your phone or tablet and create your very own agenda on the fly! You can also access a map of the venue, browse tips and useful information on the city, stay up to date with the latest information on the conference,
+  and vote and comment all the presentations!</p>
+<p>The app is available for Android, iOS and Windows Phone devices.</p>
+<p>To download mobile app, please visit
+  <a href="http://scan.conference4me.psnc.pl/get/?config=emnlp2017">this page</a>.
+  Alternatively you can scan the QR code or type 'emnlp 2017' in Google Play, 
+  iTunes App Store or Windows Phone Store.
 </p>
-
-<p>Jump to <a href="#short-papers">short papers</a>,
-  <a href="#long-papers">long papers</a>,
-  <a href="#demo-papers">demo papers</a>.
-</p>
-
-<h3 id="short-papers">Short papers</h3>
-
-<table class="striped">
-  <col style="width:35%">
-  <col style="width:65%">
-  <thead>
-    <th>Authors</th>
-    <th>Title</th>
-  </thead>
-  <tbody>
-
-{% assign papers = site.data.accepted_papers | where: "submission_type", "Short" %}
-{% for paper in papers %}
-<tr>
-  <td>{{ paper.authors }}</td>
-  <td><em>{{ paper.title }}</em></td>
-</tr>
-{% endfor %}
-
-  </tbody>
-</table>
-
-<h3 id="long-papers">Long papers</h3>
-<table class="striped">
-  <col style="width:35%">
-  <col style="width:65%">
-  <thead>
-    <th>Authors</th>
-    <th>Title</th>
-  </thead>
-  <tbody>
-
-{% assign papers = site.data.accepted_papers | where: "submission_type", "Long" %}
-{% for paper in papers %}
-<tr>
-  <td>{{ paper.authors }}</td>
-  <td><em>{{ paper.title }}</em></td>
-</tr>
-{% endfor %}
-
-  </tbody>
-</table>
-
-
-<h3 id="demo-papers">Demo papers</h3>
-<table class="striped">
-  <col style="width:35%">
-  <col style="width:65%">
-  <thead>
-    <th>Authors</th>
-    <th>Title</th>
-  </thead>
-  <tbody>
-
-{% assign papers = site.data.accepted_demo_papers %}
-{% for paper in papers %}
-<tr>
-  <td>{{ paper.authors }}</td>
-  <td><em>{{ paper.title }}</em></td>
-</tr>
-{% endfor %}
-
-  </tbody>
-</table>
-
 
 </div>
