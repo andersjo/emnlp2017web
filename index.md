@@ -23,7 +23,7 @@ layout: default
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
       <span class="title"><big>Program posted</big></span>
-      <p>Check the <a href="/program.html">full program</a> for the EMNLP 2017 conference.
+      <p>Check the <a href="/main-program.html">full program</a> for the EMNLP 2017 conference.
       <br>
       <span class="right-align">
          <i>Posted on August 17, 2017</i>
