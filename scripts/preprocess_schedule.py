@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+from datetime import datetime, timedelta
 
 import pandas as pd
 import re
@@ -32,6 +33,13 @@ args = parser.parse_args()
 def rename_column(old_name):
     return str(old_name).lower().replace(" ", "_").replace('_(ignored)', '')
 
+def date_str_to_datetime(date_str):
+    return datetime.strptime(date_str, "%A, %B %d, %Y")
+
+def time_str_to_delta(time_str):
+    abs_time = datetime.strptime(time_str, "%H:%M")
+    return timedelta(hours=abs_time.hour, minutes=abs_time.minute)
+
 # Load schedule
 NA_VALUE = '(.)'
 D = pd.read_csv(args.schedule_file, dtype=str)
@@ -49,22 +57,33 @@ days = []
 session = []
 day_program = []
 
+current_date = None
+session_id = 1
 for rec in D.to_dict('records'):
     if rec['day_date']:
+        current_date = date_str_to_datetime(rec['day_date'])
         day_program = []
         days.append({'day': rec['day_date'],
                      'program': day_program,
                      'weekday': rec['day_date'].split(",")[0]
                      })
     elif rec['ses_title']:
+        start_time_delta = time_str_to_delta(rec['ses_time'])
+        end_time_delta = time_str_to_delta(rec['ses_end_time'])
+        start_time = current_date + start_time_delta
+        end_time = current_date + end_time_delta
+
         session = {
             'title': rec['ses_title'],
             'start_time': rec['ses_time'],
             'end_time': rec['ses_end_time'],
+            'start_time_iso': start_time.isoformat(),
+            'end_time_iso': end_time.isoformat(),
             'room': rec['ses_room'] if rec['ses_room'] != NA_VALUE else None,
             'code': rec['ses_code'] if rec['ses_code'] != NA_VALUE else None,
             'talks': [],
-            'posters': []
+            'posters': [],
+            'id': str(session_id)
         }
 
         day_program.append(session)
@@ -72,6 +91,8 @@ for rec in D.to_dict('records'):
         for old_field in field_map.keys():
             if rec[old_field] != '(.)':
                 session[field_map[old_field]] = rec[old_field]
+
+        session_id += 1
 
     elif rec['pap_id']:
         paper = {'id': rec['pap_id']}
@@ -98,16 +119,30 @@ for rec in D.to_dict('records'):
 
     elif rec['gen_title']:
 # gen_title': 'Physical simulation, learning and language', 'gen_presenter': 'Nando de Freitas', 'gen_time': '09:00', 'gen_end_time': '10:00'
+        allowed_events = ['Coffee', 'Break', 'Lunch']
+        if not any(event in rec['gen_title'] for event in allowed_events):
+            continue
+
+        if rec['gen_time'] == "(.)" or rec['gen_end_time'] == "(.)":
+            print("Failed to export end time", rec)
+            continue
+
+        start_time_delta = time_str_to_delta(rec['gen_time'])
+        end_time_delta = time_str_to_delta(rec['gen_end_time'])
+        start_time = current_date + start_time_delta
+        end_time = current_date + end_time_delta
+
         general = {
             'title': rec['gen_title'],
             'start_time': rec['gen_time'],
             'end_time': rec['gen_end_time'],
-            # 'room': rec['ses_room'] if rec['ses_room'] != NA_VALUE else None,
+            'start_time_iso': start_time.isoformat(),
+            'end_time_iso': end_time.isoformat(),
+            'id': str(session_id)
         }
 
-        allowed_events = ['Coffee', 'Break', 'Lunch']
-        if not any(event in general['title'] for event in allowed_events):
-            continue
+        session_id += 1
+
 
         # invited_speakers = ['Nando de Freitas', 'Sharon Goldwater', 'Dan Jurafsky']
         #

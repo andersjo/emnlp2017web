@@ -11,12 +11,100 @@ $(document).ready(function() {
   })
 })
 
+function findNextEvent() {
+  var now = getNow()
+  // Find the event with shortest distance to the start time
+  var tracks = $(".track").get()
+
+  // Ugly arg min
+  var argMin = -1
+  var lowestVal = 1E16
+
+  for (i = 0; i < tracks.length; i++) {
+    var startTime = new Date($(tracks[i]).data('startTime'))
+    var timeTo = startTime - now
+    if (timeTo > 0 && timeTo < lowestVal) {
+      argMin = i
+      lowestVal = timeTo
+    }
+  }
+
+  if (argMin > -1) {
+    return $(tracks[argMin])
+  } else {
+    return $();
+  }
+}
+
+function getNow() {
+  return new Date()
+  //return new Date(2017, 8, 10, 12, 0, 0, 0)
+}
+
+function updateNextEvent() {
+  var nextEventElem = findNextEvent()
+  if (nextEventElem.size() == 0) {
+    console.log("No next event")
+  } else {
+    // $('#nextEventLink').attr("href", "#" + )
+    $('#nextEventLink').click(function(eventObject) {
+      eventObject.preventDefault()
+      navToTabbedItem(nextEventElem)
+
+    })
+    $('#nextEventLink').text(nextEventElem.data('trackTitle'))
+
+    var startTime = new Date(nextEventElem.data('startTime'))
+    var timeDiff = (startTime - getNow()) / 1000
+    $('#nextEventTime').text(timeDiffToText(timeDiff))
+  }
+}
+
+function timeDiffToText(timeDiffInSecs) {
+  if (timeDiffInSecs < 0) {
+    return "already started"
+  } else {
+    var hours = Math.floor(timeDiffInSecs / 3600)
+    var mins = Math.ceil((timeDiffInSecs % 3600) / 60)
+
+    if (hours > 24) {
+      return "in more than a day"
+    } else if (hours > 1){
+      return "in " + hours + " hours and " + mins + " minutes"
+    } else if (hours == 1) {
+      return "in one hour and " + mins + " minutes"
+    } else {
+      return "in " + mins + " minutes"
+    }
+  }
+}
+
+
+function navToTabbedItem(elem) {
+  var tabId = elem.closest(".day-program").attr("id")
+  $('ul.tabs').tabs('select_tab', tabId)
+  $('html, body').animate({
+    scrollTop: elem.offset().top
+  }, 1200);
+}
+
+
+$(document).ready(function() {
+  updateNextEvent()
+  setInterval(updateNextEvent, 60*1000)
+})
+
 
 </script>
 
 
 <div class="section">
 <h2>Conference program</h2>
+
+<div id="nextEvent">
+  <span>Up next:</span> <a href="" id="nextEventLink"></a> <span id="nextEventTime"></span>
+
+</div>
 
 
   <div class="row">
@@ -39,7 +127,12 @@ $(document).ready(function() {
               <ul class="collapsible" data-collapsible="accordion">
                   {% for session in track %}
                     <li>
-                      <div class="collapsible-header">
+                      <div class="collapsible-header track"
+                        id="track-{{ session.id }}"
+                        data-track-title="{{ session.title}}"
+                        data-start-time="{{ session.start_time_iso }}"
+                        data-end-time="{{ session.end_time_iso }}"
+                        >
                           <i class="material-icons">{{ site.data.session_type_to_icon[session.type] }}</i>
                           {{ session.start_time }} - {{session.end_time }}: {{ session.title}}
                       </div>
@@ -51,7 +144,13 @@ $(document).ready(function() {
             {% else %}
                 {% assign first_session = track[0] %}
 
-                <p>Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}</p>
+                <p class="track"
+                   id="track-{{ first_session.id }}"
+                   data-track-title="Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}"
+                   data-start-time="{{ first_session.start_time_iso }}"
+                   data-end-time="{{ first_session.end_time_iso }}"
+                   >
+                   Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}</p>
 
               <ul class="collapsible" data-collapsible="accordion">
                   {% for session in track %}
