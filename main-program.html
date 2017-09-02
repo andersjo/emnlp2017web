@@ -2,6 +2,19 @@
 layout: default
 ---
 
+<script language="javascript">
+
+$(document).ready(function() {
+  $(".toogle-abstract").click(function(eventObject) {
+    var abstractId = $(eventObject.target).data().abstractId
+    $("#" + abstractId).toggle()
+  })
+})
+
+
+</script>
+
+
 <div class="section">
 <h2>Conference program</h2>
 
@@ -58,6 +71,11 @@ layout: default
                                         <div class="timeslot">{{ talk.start_time }} - {{ talk.end_time }}</div>
                                         <div class="authors">{{ talk.authors }}:</div>
                                         <div class="title">{{ talk.title }}</div>
+                                        <a href="javascript:void(0);" class="toogle-abstract"
+                                             data-abstract-id="abstract-{{ talk.id }}">[abstract]</a>
+                                        <div class="abstract"
+                                         style="display: none"
+                                         id="abstract-{{ talk.id }}">{{ talk.abstract }}</div>
                                 {% endfor %}
                             </ul>
                             <ul class="poster">

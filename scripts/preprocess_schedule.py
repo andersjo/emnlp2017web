@@ -89,6 +89,7 @@ for rec in D.to_dict('records'):
         submission = submission_by_id[rec['pap_id']]
         paper['title'] = submission['title']
         paper['authors'] = submission['authors']
+        paper['abstract'] = submission['summary']
 
         if 'start_time' in paper:
             session['talks'].append(paper)
@@ -152,5 +153,3 @@ if args.out:
     # args.out.write_text(yaml_doc)
     json_doc = json.dumps(days)
     args.out.write_text(json_doc)
-
-
