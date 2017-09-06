@@ -5,11 +5,44 @@ layout: default
 <script language="javascript">
 
 $(document).ready(function() {
-  $(".toogle-abstract").click(function(eventObject) {
+  // Set up event handlers
+  $(".toggle-abstract").click(function(eventObject) {
     var abstractId = $(eventObject.target).data().abstractId
     $("#" + abstractId).toggle()
   })
+
+  $(".toggle-mark").click(function(eventObject) {
+    var paperId = $(eventObject.target).data().paperId
+    var storage = window.localStorage
+    if (storage.getItem(paperId) == null) {
+      storage.setItem(paperId, true)
+      updateMark(paperId, true)
+    } else {
+      storage.removeItem(paperId)
+      updateMark(paperId, false)
+    }
+  })
+
 })
+
+function updateMark(paperId, isMarked) {
+  var markerSymbolElem = $("#" + paperId + " .marker-symbol")
+  var toggleLinkElem = $("#" + paperId + " .toggle-mark")
+  if (isMarked) {
+    markerSymbolElem.show()
+    toggleLinkElem.text("[unmark]")
+  } else {
+    markerSymbolElem.hide()
+    toggleLinkElem.text("[mark]")
+  }
+}
+
+function updateMarkedPapersFromStorage() {
+  var storage = window.localStorage
+  for (i = 0; i < storage.length; i++) {
+    updateMark(storage.key(i), true)
+  }
+}
 
 function findNextEvent() {
   var now = getNow()
@@ -138,6 +171,7 @@ $(document).ready(function() {
   updateCurrentEvent()
   setInterval(updateCurrentEvent, 60*1000)
 
+  updateMarkedPapersFromStorage()
 })
 
 
@@ -220,12 +254,18 @@ $(document).ready(function() {
 
                             <ul class="paper">
                                 {% for talk in session.talks %}
-                                    <li>
-                                        <div class="timeslot">{{ talk.start_time }} - {{ talk.end_time }}</div>
+                                    <li id="paper-{{ talk.id }}">
+                                        <div class="timeslot">
+                                          <span class="marker-symbol" style="display: none">★</span>
+                                          {{ talk.start_time }} - {{ talk.end_time }}</div>
                                         <div class="authors">{{ talk.authors }}:</div>
                                         <div class="title">{{ talk.title }}</div>
-                                        <a href="javascript:void(0);" class="toogle-abstract"
+                                        <a href="javascript:void(0);" class="toggle-abstract"
                                              data-abstract-id="abstract-{{ talk.id }}">[abstract]</a>
+                                        <a href="javascript:void(0);"
+                                           class="toggle-mark"
+                                           data-paper-id="paper-{{ talk.id }}">[mark]</a>
+
                                         <div class="abstract"
                                          style="display: none"
                                          id="abstract-{{ talk.id }}">{{ talk.abstract }}</div>
