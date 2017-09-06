@@ -36,6 +36,35 @@ function findNextEvent() {
   }
 }
 
+function findCurrentEvent() {
+  var now = getNow()
+  // Find the shortest event that's happening now
+  var tracks = $(".track").get()
+
+  // Ugly arg min
+  var argMin = -1
+  var lowestVal = 1E16
+
+  for (i = 0; i < tracks.length; i++) {
+    var startTime = new Date($(tracks[i]).data('startTime'))
+    var endTime = new Date($(tracks[i]).data('endTime'))
+
+    if (startTime < now && endTime > now) {
+      var duration = endTime - startTime
+      if (duration < lowestVal) {
+        argMin = i
+        lowestVal = duration
+      }
+    }
+  }
+
+  if (argMin > -1) {
+    return $(tracks[argMin])
+  } else {
+    return $();
+  }
+}
+
 function getNow() {
   return new Date()
   //return new Date(2017, 8, 10, 12, 0, 0, 0)
@@ -57,6 +86,19 @@ function updateNextEvent() {
     var startTime = new Date(nextEventElem.data('startTime'))
     var timeDiff = (startTime - getNow()) / 1000
     $('#nextEventTime').text(timeDiffToText(timeDiff))
+  }
+}
+
+function updateCurrentEvent() {
+  var currentEventElem = findCurrentEvent()
+  if (currentEventElem.size() == 0) {
+    console.log("No current event")
+  } else {
+    $('#currentEventLink').click(function(eventObject) {
+      eventObject.preventDefault()
+      navToTabbedItem(currentEventElem)
+    })
+    $('#currentEventLink').text(currentEventElem.data('trackTitle'))
   }
 }
 
@@ -92,6 +134,10 @@ function navToTabbedItem(elem) {
 $(document).ready(function() {
   updateNextEvent()
   setInterval(updateNextEvent, 60*1000)
+
+  updateCurrentEvent()
+  setInterval(updateCurrentEvent, 60*1000)
+
 })
 
 
@@ -101,9 +147,13 @@ $(document).ready(function() {
 <div class="section">
 <h2>Conference program</h2>
 
+
+<div id="currentEvent">
+  <span>Now:</span> <a href="" id="currentEventLink"></a> </span>
+</div>
+
 <div id="nextEvent">
   <span>Up next:</span> <a href="" id="nextEventLink"></a> <span id="nextEventTime"></span>
-
 </div>
 
 
@@ -160,10 +210,14 @@ $(document).ready(function() {
                           {{ session.code}}: {{ session.title}}
                           <div class="right hide-on-small-only">
                               <span class="grey-text text-lighten-2" style="font-size: 0.8em">{{session.room }}</span>
-                              <div style="clear: both"></div>
                           </div>
+                          <div style="clear: both"></div>
                       </div>
                       <div class="collapsible-body program-session">
+                          <div class="hide-on-med-and-up" style="padding-bottom: 1em;">
+                              Room: {{session.room }}
+                          </div>
+
                             <ul class="paper">
                                 {% for talk in session.talks %}
                                     <li>

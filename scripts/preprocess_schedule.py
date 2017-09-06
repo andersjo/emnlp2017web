@@ -1,6 +1,6 @@
 import argparse
 from pathlib import Path
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 import re
@@ -34,7 +34,9 @@ def rename_column(old_name):
     return str(old_name).lower().replace(" ", "_").replace('_(ignored)', '')
 
 def date_str_to_datetime(date_str):
-    return datetime.strptime(date_str, "%A, %B %d, %Y")
+    time_without_tz = datetime.strptime(date_str, "%A, %B %d, %Y")
+    cph_tz = timezone(timedelta(hours=2))
+    return time_without_tz.replace(tzinfo=cph_tz)
 
 def time_str_to_delta(time_str):
     abs_time = datetime.strptime(time_str, "%H:%M")
