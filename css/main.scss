@@ -282,3 +282,11 @@ ul .paper li, ul .poster li {
 .marker-symbol {
   color: $accent-color;
 }
+
+// ul.paper li.marked .timeslot {
+//   text-decoration: underline;
+// }
+
+ul.paper .abstract {
+  font-style: italic;
+}

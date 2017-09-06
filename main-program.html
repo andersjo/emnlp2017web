@@ -26,12 +26,15 @@ $(document).ready(function() {
 })
 
 function updateMark(paperId, isMarked) {
-  var markerSymbolElem = $("#" + paperId + " .marker-symbol")
-  var toggleLinkElem = $("#" + paperId + " .toggle-mark")
+  var paperElem = $("#" + paperId)
+  var markerSymbolElem = $(".marker-symbol", paperElem)
+  var toggleLinkElem = $(".toggle-mark", paperElem)
   if (isMarked) {
+    paperElem.addClass("marked")
     markerSymbolElem.show()
     toggleLinkElem.text("[unmark]")
   } else {
+    paperElem.removeClass("marked")
     markerSymbolElem.hide()
     toggleLinkElem.text("[mark]")
   }
