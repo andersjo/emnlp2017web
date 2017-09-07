@@ -9,9 +9,18 @@
             <div class="title">{{ talk.title }}</div>
             <a href="javascript:void(0);" class="toggle-abstract"
                  data-abstract-id="abstract-{{ talk.id }}">[abstract]</a>
+            &nbsp;
             <a href="javascript:void(0);"
                class="toggle-mark"
-               data-paper-id="paper-{{ talk.id }}">[mark]</a>
+               data-paper-id="paper-{{ talk.id }}">
+               [mark]
+             </a>
+
+           {% if talk.anthology_url != nil %}
+           &nbsp;<a href="{{ talk.anthology_url }}">
+             [pdf]
+           </a>
+           {% endif %}
 
             <div class="abstract"
              style="display: none"
@@ -22,7 +31,13 @@
     {% for poster in session.posters %}
         <li>
             <div class="authors">{{ poster.authors }}:</div>
-            <div class="title">{{ poster.title }}</div>
+            <div class="title">{{ poster.title }}
+              {% if poster.anthology_url %}
+              &nbsp;<a href="{{ poster.anthology_url }}">
+                [pdf]
+              </a>
+              {% endif %}
+            </div>
 
         </li>
     {% endfor %}

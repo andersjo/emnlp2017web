@@ -23,6 +23,13 @@ $(document).ready(function() {
     }
   })
 
+
+  $(".toggle-abstract2").click(function(eventObject) {
+    var paperElem = $(eventObject.target).closest(".paper")
+    $(".abstract", paperElem).toggle()
+    $(".toggle-abstract2").toggle()
+  })
+
 })
 
 function updateMark(paperId, isMarked) {

@@ -12,6 +12,7 @@ import json
 parser = argparse.ArgumentParser(description="Converts from custom 'order' format to YAML")
 parser.add_argument("schedule_file", help="A CSV dump from ScheduleMaker", type=Path)
 parser.add_argument("submission_file", help="Submission information file", type=Path)
+parser.add_argument("--id-map", help="Map between submission ids and anthology ids", type=Path)
 parser.add_argument("--out", help="The output file", type=Path)
 # parser.add_argument("--output-dir",
 #                     help="Place output files here (default is tests/integration-tests/generated)",
@@ -54,6 +55,19 @@ submissions = submissions.rename_axis(rename_column, axis='columns')
 submissions = submissions.where((pd.notnull(submissions)), None)
 submission_by_id = {rec['submission_id']: rec
                     for rec in submissions.to_dict('records')}
+
+# Load submission id to anthology id
+submission_id_to_anthology_id = {}
+
+if args.id_map:
+    id_map_df = pd.read_csv(str(args.id_map),
+                            sep=" ",
+                            names=['anthology_id', 'submission_id'])
+    id_map_df.anthology_id = id_map_df.anthology_id\
+                                      .str.replace("EMNLP2017", "")\
+                                      .astype(int)
+    submission_id_to_anthology_id = dict(zip(id_map_df.submission_id,
+                                             id_map_df.anthology_id))
 
 days = []
 session = []
@@ -113,6 +127,15 @@ for rec in D.to_dict('records'):
         paper['title'] = submission['title']
         paper['authors'] = submission['authors']
         paper['abstract'] = submission['summary']
+
+        anthology_id = submission_id_to_anthology_id.get(int(paper['id']))
+        if anthology_id:
+            if paper['venue'] == 'TACL':
+                continue
+            base_url = 'http://aclweb.org/anthology/D17-1'
+            paper['anthology_url'] = "{}{:03}".format(base_url, anthology_id)
+        else:
+            print("Not found", paper['id'], paper['venue'])
 
         if 'start_time' in paper:
             session['talks'].append(paper)
