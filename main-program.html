@@ -145,23 +145,35 @@ function updateCurrentEvent() {
   }
 }
 
+function timeUnitToText(plural, singular, number) {
+  if (number > 1) {
+    return "" + number + " " + plural
+  } else if (number == 1) {
+    return "one " + singular
+  } else {
+    ""
+  }
+}
+
 function timeDiffToText(timeDiffInSecs) {
   if (timeDiffInSecs < 0) {
     return "already started"
   } else {
     var hours = Math.floor(timeDiffInSecs / 3600)
-    var mins = Math.ceil((timeDiffInSecs % 3600) / 60)
+    var mins = Math.floor((timeDiffInSecs % 3600) / 60)
 
     if (hours >= 24) {
       return "in more than a day"
-    } else if (hours > 1){
-      return "in " + hours + " hours and " + mins + " minutes"
-    } else if (hours == 1) {
-      return "in one hour and " + mins + " minutes"
-    } else {
-      return "in " + mins + " minutes"
     }
-  }
+
+    var hourPart = timeUnitToText("hours", "hour", hours)
+    var minutePart = timeUnitToText("minutes", "minute", minutes)
+
+    if (hourPart && minutePart) {
+      return "in " + hourPart + " and " + minutePart
+    } else {}
+      return "in " + hourPart + minutePart
+    }
 }
 
 
