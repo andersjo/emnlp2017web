@@ -10,6 +10,22 @@ layout: default
 
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Conference proceedings</big></span>
+    <p>The proceedings for the main conference will be available at
+    the ACL anthology by conference start, Saturday morning.
+    For workshop proceedings please check the
+    individual <a href="workshops.html">workshop websites</a>.
+
+    <br>
+    <span class="right-align">
+       <i>Posted on September 7, 2017</i>
+    </span>
+    </p>
+  </li>  
+
+
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Conference app</big></span>
     <p>EMNLP has a neat app to help you keep up to date with the schedule.
     <a href="/app.html">Get it</a> for your mobile device.
@@ -19,6 +35,8 @@ layout: default
     </span>
     </p>
   </li>  
+
+
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
