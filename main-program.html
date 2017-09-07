@@ -233,15 +233,18 @@ $(document).ready(function() {
             {% else %}
                 {% assign first_session = track[0] %}
 
-                <p class="track"
-                   id="track-{{ first_session.id }}"
-                   data-track-title="Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}"
-                   data-start-time="{{ first_session.start_time_iso }}"
-                   data-end-time="{{ first_session.end_time_iso }}"
-                   >
-                   Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}</p>
-
               <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header track parallel-track"
+                    style="text-align: center"
+                    id="track-{{ first_session.id }}"
+                    data-track-title="Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}"
+                    data-start-time="{{ first_session.start_time_iso }}"
+                    data-end-time="{{ first_session.end_time_iso }}">
+                    Parallel session from {{ first_session.start_time }} to {{first_session.end_time }}
+                  </div>
+                </li>
+
                   {% for session in track %}
                     <li>
                       <div class="collapsible-header">
