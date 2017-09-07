@@ -1,0 +1,29 @@
+{% assign session = include.session %}
+<ul class="paper">
+    {% for talk in session.talks %}
+        <li id="paper-{{ talk.id }}">
+            <div class="timeslot">
+              <span class="marker-symbol" style="display: none">★</span>
+              {{ talk.start_time }} - {{ talk.end_time }}</div>
+            <div class="authors">{{ talk.authors }}:</div>
+            <div class="title">{{ talk.title }}</div>
+            <a href="javascript:void(0);" class="toggle-abstract"
+                 data-abstract-id="abstract-{{ talk.id }}">[abstract]</a>
+            <a href="javascript:void(0);"
+               class="toggle-mark"
+               data-paper-id="paper-{{ talk.id }}">[mark]</a>
+
+            <div class="abstract"
+             style="display: none"
+             id="abstract-{{ talk.id }}">{{ talk.abstract }}</div>
+    {% endfor %}
+</ul>
+<ul class="poster">
+    {% for poster in session.posters %}
+        <li>
+            <div class="authors">{{ poster.authors }}:</div>
+            <div class="title">{{ poster.title }}</div>
+
+        </li>
+    {% endfor %}
+</ul>
