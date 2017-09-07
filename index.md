@@ -11,10 +11,11 @@ layout: default
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Conference proceedings</big></span>
-    <p>The proceedings for the main conference will be available at
-    the ACL anthology by conference start, Saturday morning.
-    For workshop proceedings please check the
-    individual <a href="workshops.html">workshop websites</a>.
+    <p>The proceedings for the main conference are now available
+    at the <a href="http://www.aclweb.org/anthology/D/D17">ACL anthology</a>
+    and via links in the <a href="/main-program.html">program</a>.
+    Workshop proceedings may be found
+    <a href="http://www.aclweb.org/anthology/W/W17/">here</a>.
 
     <br>
     <span class="right-align">
