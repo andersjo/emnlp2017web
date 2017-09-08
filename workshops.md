@@ -29,7 +29,8 @@ layout: default
               {{ workshop.contact_person }}</a>
             </p>
 
-            <p>Workshop <a href="{{ workshop.website }}">website</a></p>
+            <p>See workshop <a href="{{ workshop.website }}">website</a>
+            and published <a href="{{ workshop.proceedings_url }}">proceedings</a></p>
         </div>
         <div class="clear:both">&nbsp;</div>
       </div>
