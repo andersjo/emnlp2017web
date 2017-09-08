@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="section">
+  <div class="right">Keep up to date with the conference <a href="/main-program.html">program</a></div>
   <h3>Announcements</h3>
 </div>
 
@@ -10,10 +11,24 @@ layout: default
 
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Live streaming</big></span>
+    <p>All conference talks are streamed live,
+       and archived for later viewing.
+       Follow the live streaming <a href="/live-streaming.html">here</a>
+    <br>
+    <span class="right-align">
+       <i>Posted on September 8, 2017</i>
+    </span>
+    </p>
+  </li>  
+
+
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Conference proceedings</big></span>
     <p>The proceedings for the main conference are now available
     at the <a href="http://www.aclweb.org/anthology/D/D17">ACL anthology</a>
-    and via links in the <a href="/main-program.html">program</a>.
+    and via links in the <a href="/main-program.html">program</a.
     Workshop proceedings may be found
     <a href="http://www.aclweb.org/anthology/W/W17/">here</a>.
 

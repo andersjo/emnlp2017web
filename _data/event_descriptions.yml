@@ -39,3 +39,11 @@
       It's scheduled to end at 10 PM.</p>
       <p>Some social events are designed to give attendees a chance to see a popular tourist attraction, but this year, the social event is pure fun and relaxation. All attendees are invited to grab free food at our food trucks, listen to great music, or just chill in the lounge areas</p>
     </div>
+
+- match_title: "Welcome Reception"
+  description: |
+    <div>
+      <p>Join your collegues for the opening reception of EMNLP 2017.
+       The reception is held in the room <em>Østerbro</em>, on the top floor of CpH.
+      </p>
+    </div>
