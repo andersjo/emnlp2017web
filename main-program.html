@@ -244,6 +244,10 @@ $(document).ready(function() {
                       </div>
                       <div class="collapsible-body program-session">
                         {% include papers_and_posters.html session=session %}
+                        {% if session.description != nil %}
+                        {{ session.description }}
+                        {% endif %}
+
                       </div>
                     </li>
                   {% endfor %}

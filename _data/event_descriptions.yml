@@ -1,0 +1,41 @@
+- match_title: "Invited Talk by Dan Jurafsky"
+  description: |
+    <div>
+      <b>Dan Jurafsky, Stanford University</b><br/>
+      <em>"Does This Vehicle Belong to You”?</em>
+      <p>
+      Processing the Language of Policing for Improving Police-Community Relations
+      Police body-cameras have the potential to play an important role in understanding and improving police-community relations. In this talk I describe a series of studies conducted by our large interdisciplinary team at Stanford that use speech and natural language processing on body-camera recordings to model the interactions between police officers and community members in traffic stops. We use text and speech features to automatically measure linguistic aspects of the interaction, from discourse factors like conversational structure to social factors like respect. I describe the differences we find in the language directed toward black versus white community members, and offer suggestions for how these findings can be used to help improve the fraught relations between police officers and the communities they serve.
+      </p>
+    </div>
+
+- match_title: "Invited Talk by Nando de Freitas"
+  description: |
+    <div>
+      <b>Nando de Freitas, Google Deepmind</b><br/>
+      <em>Physical simulation, learning and language</em>
+      <p>
+      Simulated physical environments, with common physical laws, objects and agents with bodies, provide us with consistency to facilitate transfer and continual learning. In such environments, research topics such as learning to experiment, learning to learn and emergent communication can be easily explored. Given the relevance of these topics to language, it is natural to ask ourselves whether research in language would benefit from the development of such environments, and whether language can contribute toward improving such environments and agents within them. This talk will provide an overview of some of these environments, discuss learning to learn and its potential relevance to language, and present some deep reinforcement learning agents that capitalize on formal language instructions to develop disentangled interpretable representations that allow them to generalize to a wide variety of zero-shot semantic tasks. The talk will pose more questions than answers in the hope of stimulating discussion.
+      </p>
+    </div>
+
+- match_title: "Invited Talk by Sharon Goldwater"
+  description: |
+    <div>
+      <b>Sharon Goldwater, University of Edinburgh</b><br/>
+      <em>Towards more universal language technology: unsupervised learning from speech</em>
+      <p>
+      Speech and language processing has advanced enormously in the last decade, with successful applications in machine translation, voice-activated search, and even language-enabled personal assistants. Yet these systems typically still rely on learning from very large quantities of human-annotated data. These resource-intensive methods mean that effective technology is available for only a tiny fraction of the world's 7000 or so languages, mainly those spoken in large rich countries.
+      </p>
+      <p>
+      This talk describes our recent work on developing unsupervised speech technology, where transcripts and pronunciation dictionaries are not used. The work is inspired by considering both how young infants may begin to acquire the sounds and words of their language, and how we might develop systems to help linguists analyze and document endangered languages. I will first present work on learning from speech audio alone, where the system must learn to segment the speech stream into word tokens and cluster repeated instances of the same word together to learn a lexicon of vocabulary items. The approach combines Bayesian and neural network methods to address learning at the word and sub-word levels.
+      </p>
+    </div>
+
+- match_title: "Social Event"
+  description: |
+    <div>
+      <p>The social event will take place in the court yard just outside the venue, directly after the last session of Sunday.
+      It's scheduled to end at 10 PM.</p>
+      <p>Some social events are designed to give attendees a chance to see a popular tourist attraction, but this year, the social event is pure fun and relaxation. All attendees are invited to grab free food at our food trucks, listen to great music, or just chill in the lounge areas</p>
+    </div>

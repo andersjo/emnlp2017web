@@ -13,6 +13,8 @@ parser = argparse.ArgumentParser(description="Converts from custom 'order' forma
 parser.add_argument("schedule_file", help="A CSV dump from ScheduleMaker", type=Path)
 parser.add_argument("submission_file", help="Submission information file", type=Path)
 parser.add_argument("--id-map", help="Map between submission ids and anthology ids", type=Path)
+parser.add_argument("--event-descriptions", help="Descriptions not found in START", type=Path)
+
 parser.add_argument("--out", help="The output file", type=Path)
 # parser.add_argument("--output-dir",
 #                     help="Place output files here (default is tests/integration-tests/generated)",
@@ -43,6 +45,15 @@ def time_str_to_delta(time_str):
     abs_time = datetime.strptime(time_str, "%H:%M")
     return timedelta(hours=abs_time.hour, minutes=abs_time.minute)
 
+def clean_title(original_title):
+    remove = ['Plenary Session.', 'Poster Session.']
+
+    for phrase in remove:
+        original_title = original_title.replace(phrase, "")
+
+    return original_title.strip()
+
+
 # Load schedule
 NA_VALUE = '(.)'
 D = pd.read_csv(args.schedule_file, dtype=str)
@@ -69,6 +80,11 @@ if args.id_map:
     submission_id_to_anthology_id = dict(zip(id_map_df.submission_id,
                                              id_map_df.anthology_id))
 
+# Load event descriptions
+event_descriptions = []
+if args.event_descriptions:
+    event_descriptions = yaml.load(args.event_descriptions.read_text())
+
 days = []
 session = []
 day_program = []
@@ -90,7 +106,7 @@ for rec in D.to_dict('records'):
         end_time = current_date + end_time_delta
 
         session = {
-            'title': rec['ses_title'],
+            'title': clean_title(rec['ses_title']),
             'start_time': rec['ses_time'],
             'end_time': rec['ses_end_time'],
             'start_time_iso': start_time.isoformat(),
@@ -107,6 +123,12 @@ for rec in D.to_dict('records'):
         for old_field in field_map.keys():
             if rec[old_field] != '(.)':
                 session[field_map[old_field]] = rec[old_field]
+
+
+        # Check if there's a matching description to the event
+        for event_description in event_descriptions:
+            if event_description['match_title'] in session['title']:
+                session['description'] = event_description['description']
 
         session_id += 1
 
@@ -158,7 +180,7 @@ for rec in D.to_dict('records'):
         end_time = current_date + end_time_delta
 
         general = {
-            'title': rec['gen_title'],
+            'title': clean_title(rec['gen_title']),
             'start_time': rec['gen_time'],
             'end_time': rec['gen_end_time'],
             'start_time_iso': start_time.isoformat(),
@@ -167,12 +189,6 @@ for rec in D.to_dict('records'):
         }
 
         session_id += 1
-
-
-        # invited_speakers = ['Nando de Freitas', 'Sharon Goldwater', 'Dan Jurafsky']
-        #
-        # if rec['gen_presenter'] in invited_speakers:
-        #     continue
 
 
         day_program.append(general)
