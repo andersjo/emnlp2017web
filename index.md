@@ -28,7 +28,7 @@ layout: default
     <span class="title"><big>Conference proceedings</big></span>
     <p>The proceedings for the main conference are now available
     at the <a href="http://www.aclweb.org/anthology/D/D17">ACL anthology</a>
-    and via links in the <a href="/main-program.html">program</a.
+    and via links in the <a href="/main-program.html">program</a>.
     Workshop proceedings may be found
     <a href="http://www.aclweb.org/anthology/W/W17/">here</a>.
 
