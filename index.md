@@ -11,6 +11,20 @@ layout: default
 
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Poster Audience Award</big></span>
+    <p>
+    We let the audience decide on their favourite poster,
+    which will receive a prize at the end of the conference.
+    <a href="/faq.html">Read how</a> to cast your votes.
+    <br>
+    <span class="right-align">
+       <i>Posted on September 9, 2017</i>
+    </span>
+    </p>
+  </li>  
+
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Live streaming</big></span>
     <p>All conference talks are streamed live,
        and archived for later viewing.
