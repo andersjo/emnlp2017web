@@ -11,6 +11,21 @@ layout: default
 
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
+    <span class="title"><big>Video archive</big></span>
+    <p>All conference presentations, including tutorials and keynote talks,
+    are available for to watch at the <a href="https://vimeo.com/channels/emnlp2017">video archive</a>.
+    Search for the talk by title.
+    <br>
+    <span class="right-align">
+       <i>Posted on April 4, 2018</i>
+    </span>
+    </p>
+  </li>  
+
+
+
+  <li class="collection-item avatar">
+    <i class="material-icons circle">info_outline</i>
     <span class="title"><big>Poster Audience Award</big></span>
     <p>
     We let the audience decide on their favourite poster,
@@ -22,20 +37,6 @@ layout: default
     </span>
     </p>
   </li>  
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle">info_outline</i>
-    <span class="title"><big>Live streaming</big></span>
-    <p>All conference talks are streamed live,
-       and archived for later viewing.
-       Follow the live streaming <a href="/live-streaming.html">here</a>
-    <br>
-    <span class="right-align">
-       <i>Posted on September 8, 2017</i>
-    </span>
-    </p>
-  </li>  
-
 
   <li class="collection-item avatar">
     <i class="material-icons circle">info_outline</i>
@@ -52,33 +53,6 @@ layout: default
     </span>
     </p>
   </li>  
-
-
-  <li class="collection-item avatar">
-    <i class="material-icons circle">info_outline</i>
-    <span class="title"><big>Conference app</big></span>
-    <p>EMNLP has a neat app to help you keep up to date with the schedule.
-    <a href="/app.html">Get it</a> for your mobile device.
-    <br>
-    <span class="right-align">
-       <i>Posted on September 1, 2017</i>
-    </span>
-    </p>
-  </li>  
-
-
-
-    <li class="collection-item avatar">
-      <i class="material-icons circle">info_outline</i>
-      <span class="title"><big>Social events</big></span>
-      <p>Reserve time in your calendar for the opening reception
-      on Friday 8th 7-10pm, and the <a href="/social-event.html">social event</a> on Sunday 10th 6-10pm.
-      <br>
-      <span class="right-align">
-         <i>Posted on August 28, 2017</i>
-      </span>
-      </p>
-    </li>  
 
     <li class="collection-item avatar">
       <i class="material-icons circle">info_outline</i>
